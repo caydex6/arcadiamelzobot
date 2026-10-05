@@ -173,17 +173,9 @@
   "avengers-endgame-extra": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/b182d1beda5de63f258d7957c611853ed8aa343553d2bce273d66507f6781cabd31e4aa0463b22a71e02fb668dee431f3cfb0bc40f77432fa4de24299113f995.jpg",
    "shows": {
-    "131021": {
-     "fmt": "ENERGIA",
-     "when": "05/10 17:00"
-    },
     "131022": {
      "fmt": "ENERGIA",
      "when": "07/10 17:00"
-    },
-    "131084": {
-     "fmt": "2D",
-     "when": "05/10 20:40"
     },
     "131086": {
      "fmt": "2D",
@@ -211,10 +203,6 @@
   "digger-2026": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/eec4df2672c82ce0bbacb6c95f549be5a8c53aebc5a4c8c160fe732c6c69776f972f2a1af4593b9f30b4cd5bee0c9fd3e6bae69eaa2ff31aeb9c98a537871b1c.jpg",
    "shows": {
-    "131060": {
-     "fmt": "2D",
-     "when": "05/10 17:10"
-    },
     "131061": {
      "fmt": "2D",
      "when": "06/10 17:10"
@@ -222,10 +210,6 @@
     "131062": {
      "fmt": "2D",
      "when": "07/10 17:10"
-    },
-    "131071": {
-     "fmt": "2D",
-     "when": "05/10 21:15"
     },
     "131072": {
      "fmt": "2D",
@@ -264,10 +248,6 @@
   "heart-of-the-beast-nel-profondo-selvaggio": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/40f1fd35dfdd397f6f600f01d2dcda4941633ffac90fb7bacf0f81a1f3b70a349103842160b654b4af273baecd7518482540d32d2eecc526e8241017c2efb969.jpg",
    "shows": {
-    "131085": {
-     "fmt": "2D",
-     "when": "05/10 17:35"
-    },
     "131087": {
      "fmt": "2D",
      "when": "06/10 17:35"
@@ -324,10 +304,6 @@
   "odissea-2026": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/42f162380c417f85f9f1dbc6a445a514d0d70fc5f7cfe73b9c9f50ca47813cd238783cae53685516d857950f1f6c4c57b01d5a97db088ffae736870e4919acda.jpg",
    "shows": {
-    "130827": {
-     "fmt": "70MM ENERGIA",
-     "when": "05/10 21:00"
-    },
     "130828": {
      "fmt": "70MM ENERGIA",
      "when": "06/10 17:00"
@@ -414,10 +390,6 @@
   "quasi-vera": {
    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48449.jpg",
    "shows": {
-    "131103": {
-     "fmt": "2D",
-     "when": "05/10 17:20"
-    },
     "131106": {
      "fmt": "2D",
      "when": "06/10 20:35"
@@ -440,25 +412,10 @@
     "131055": {
      "fmt": "2D",
      "when": "07/10 20:30"
-    },
-    "131104": {
-     "fmt": "2D",
-     "when": "05/10 20:35"
     }
    },
    "title": "RESIDENT EVIL [2026]",
    "url": "/scheda/resident-evil-2026/48060/3364/"
-  },
-  "the-invite-il-piacere-e-tutto-nostro": {
-   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48405.jpg",
-   "shows": {
-    "131051": {
-     "fmt": "2D",
-     "when": "05/10 20:30"
-    }
-   },
-   "title": "THE INVITE - IL PIACERE È TUTTO NOSTRO",
-   "url": "/scheda/the-invite-il-piacere-e-tutto-nostro/48405/3364/"
   },
   "the-matrix-1999-reissue-original-version": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/1c48cf5f5092bdb2d4511db1f6259d23b76f9825948c2bccab2db953663f8e0c2efd43222e3a65e96b36aa1a32be8e19769cfc97030847c030adef8c474d39ce.jpg",
@@ -493,10 +450,6 @@
   "verity": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/4e63a95d87a77a438cecd49369d3b751befd8de5bd10687f6cad29440981889dd4e57e97d0718bc3bdf3a612a0112b131b848bc2bc6ef5a819e87bda3c75e096.jpg",
    "shows": {
-    "131050": {
-     "fmt": "2D",
-     "when": "05/10 17:25"
-    },
     "131052": {
      "fmt": "2D",
      "when": "06/10 20:50"
