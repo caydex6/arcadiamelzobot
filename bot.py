@@ -28,6 +28,7 @@ import os
 import re
 import sys
 import time
+from datetime import date
 from pathlib import Path
 from urllib.parse import quote, urljoin
 
@@ -126,11 +127,8 @@ def scrape(cinema: str) -> dict:
     return films
 
 
-def send_photo(photo: str, text: str) -> bool:
-    """Invia la locandina con il testo come didascalia. False se Telegram la rifiuta."""
-    caption = text
-    if len(caption) > 1000:  # limite Telegram: 1024 caratteri
-        caption = "\n".join(text.split("\n")[:2])
+def send_photo(photo: str, caption: str) -> bool:
+    """Invia la locandina con una didascalia. False se Telegram la rifiuta."""
     try:
         r = requests.post(
             f"https://api.telegram.org/bot{TOKEN}/sendPhoto",
@@ -144,18 +142,10 @@ def send_photo(photo: str, text: str) -> bool:
         print(f"Locandina rifiutata da Telegram ({r.status_code}): {r.text}", file=sys.stderr)
         return False
     time.sleep(1)
-    return caption == text  # se la didascalia era accorciata, il testo completo va inviato a parte
+    return True
 
 
-def send(text: str, photo: str = "") -> None:
-    if DRY_RUN:
-        print("--- MESSAGGIO (dry run) ---")
-        if photo:
-            print(f"[locandina: {photo}]")
-        print(re.sub(r"<[^>]+>", "", html.unescape(text)))
-        return
-    if photo and send_photo(photo, text):
-        return
+def send_text(text: str) -> None:
     for chunk in split_message(text):
         r = requests.post(
             f"https://api.telegram.org/bot{TOKEN}/sendMessage",
@@ -172,6 +162,38 @@ def send(text: str, photo: str = "") -> None:
         time.sleep(1)
 
 
+def send(header: str, body: str = "", photo: str = "") -> None:
+    """Invia una notifica.
+
+    - con locandina: se intestazione + orari stanno nella didascalia (max 1024
+      caratteri) parte un solo messaggio; altrimenti la locandina porta solo
+      l'intestazione e gli orari seguono in un secondo messaggio (senza
+      ripetere l'intestazione).
+    - senza locandina (o se Telegram la rifiuta): un messaggio di testo completo.
+    """
+    full = f"{header}\n\n{body}" if body else header
+    if DRY_RUN:
+        print("--- MESSAGGIO (dry run) ---")
+        if photo:
+            print(f"[locandina: {photo}]")
+        if photo and len(full) > 1000:
+            print(re.sub(r"<[^>]+>", "", html.unescape(header)))
+            print("--- secondo messaggio ---")
+            print(re.sub(r"<[^>]+>", "", html.unescape(body)))
+        else:
+            print(re.sub(r"<[^>]+>", "", html.unescape(full)))
+        return
+    if photo:
+        if len(full) <= 1000:
+            if send_photo(photo, full):
+                return
+        elif send_photo(photo, header):
+            if body:
+                send_text(body)
+            return
+    send_text(full)
+
+
 def split_message(text: str, limit: int = 4000):
     lines, buf = text.split("\n"), ""
     for line in lines:
@@ -183,18 +205,42 @@ def split_message(text: str, limit: int = 4000):
         yield buf
 
 
+GIORNI = ["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato", "Domenica"]
+
+
+def to_date(day: str) -> date:
+    """'19/12' -> data completa. L'anno non è sul sito: si sceglie quello che
+    porta la data più vicina a oggi (da 30 giorni fa a circa 11 mesi avanti)."""
+    d, m = map(int, day.split("/"))
+    today = date.today()
+    for year in (today.year, today.year + 1, today.year - 1):
+        try:
+            cand = date(year, m, d)
+        except ValueError:
+            continue
+        if -30 <= (cand - today).days <= 335:
+            return cand
+    return date(today.year, m, d)
+
+
 def format_shows(shows: dict) -> str:
-    """Raggruppa per giorno: '• 05/10: 17:10, 21:15 (2D)'."""
+    """Un blocco per giorno, un orario per riga:
+
+    📅 Sabato 19/12
+    00:30 (INFINITY VISION)
+    01:00 (ENERGIA INFINITY VISION)
+    """
     by_day: dict = {}
     for s in shows.values():
         day, hour = s["when"].split(" ")
         by_day.setdefault(day, []).append((hour, s["fmt"]))
-    out = []
-    for day, items in by_day.items():
-        items.sort()
-        parts = [f"{h} ({f})" if f else h for h, f in items]
-        out.append(f"• {day}: {', '.join(parts)}")
-    return "\n".join(out)
+    blocks = []
+    for day in sorted(by_day, key=to_date):
+        items = sorted(by_day[day])
+        lines = [f"{h} ({esc(f)})" if f else h for h, f in items]
+        label = f"{GIORNI[to_date(day).weekday()]} {day}"
+        blocks.append(f"📅 <b>{label}</b>\n" + "\n".join(lines))
+    return "\n\n".join(blocks)
 
 
 def esc(s: str) -> str:
@@ -208,19 +254,20 @@ def watched(title: str) -> bool:
 def diff_and_notify(cinema: str, old: dict, new: dict) -> None:
     name = cinema.capitalize()
     for slug, film in new.items():
-        link = f'<a href="{html.escape(film["url"])}">Scheda film</a>'
+        link = f'<a href="{html.escape(film["url"])}">SCHEDA FILM</a>'
+        title = esc(film["title"])
         if slug not in old:
             send(
-                f"🎬 <b>Nuovo film a {name}</b>\n<b>{esc(film['title'])}</b>\n\n"
-                f"{esc(format_shows(film['shows']))}\n\n{link}",
+                f"🎬 <b>Nuovo film a {name}</b>\n<b>{title}</b>",
+                f"{format_shows(film['shows'])}\n\n{link}",
                 film.get("poster", ""),
             )
             continue
         added = {i: s for i, s in film["shows"].items() if i not in old[slug]["shows"]}
         if added and watched(film["title"]):
             send(
-                f"🕒 <b>Nuovi orari a {name}</b>\n<b>{esc(film['title'])}</b>\n\n"
-                f"{esc(format_shows(added))}\n\n{link}",
+                f"🕒 <b>Nuovi orari a {name}</b>\n<b>{title}</b>",
+                f"{format_shows(added)}\n\n{link}",
                 film.get("poster", ""),
             )
 
