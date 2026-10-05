@@ -1,0 +1,494 @@
+{
+ "melzo": {
+  "avengers-doomsday": {
+   "shows": {
+    "131181": {
+     "fmt": "ENERGIA INFINITY VISION",
+     "when": "15/12 00:01"
+    },
+    "131182": {
+     "fmt": "ENERGIA INFINITY VISION",
+     "when": "16/12 13:00"
+    },
+    "131183": {
+     "fmt": "ENERGIA INFINITY VISION",
+     "when": "17/12 17:00"
+    },
+    "131184": {
+     "fmt": "ENERGIA INFINITY VISION",
+     "when": "18/12 21:00"
+    },
+    "131186": {
+     "fmt": "ENERGIA INFINITY VISION",
+     "when": "20/12 13:00"
+    },
+    "131187": {
+     "fmt": "INFINITY VISION",
+     "when": "15/12 00:01"
+    },
+    "131189": {
+     "fmt": "INFINITY VISION",
+     "when": "16/12 09:30"
+    },
+    "131191": {
+     "fmt": "INFINITY VISION",
+     "when": "16/12 11:30"
+    },
+    "131192": {
+     "fmt": "INFINITY VISION",
+     "when": "16/12 17:30"
+    },
+    "131193": {
+     "fmt": "INFINITY VISION",
+     "when": "15/12 00:01"
+    },
+    "131194": {
+     "fmt": "INFINITY VISION",
+     "when": "15/12 00:01"
+    },
+    "131195": {
+     "fmt": "INFINITY VISION",
+     "when": "16/12 10:30"
+    },
+    "131196": {
+     "fmt": "ENERGIA INFINITY VISION",
+     "when": "18/12 13:00"
+    },
+    "131197": {
+     "fmt": "ENERGIA INFINITY VISION",
+     "when": "19/12 01:00"
+    },
+    "131198": {
+     "fmt": "INFINITY VISION",
+     "when": "16/12 12:30"
+    },
+    "131199": {
+     "fmt": "INFINITY VISION",
+     "when": "16/12 20:30"
+    },
+    "131200": {
+     "fmt": "INFINITY VISION",
+     "when": "16/12 18:30"
+    },
+    "131221": {
+     "fmt": "INFINITY VISION",
+     "when": "17/12 21:30"
+    },
+    "131224": {
+     "fmt": "INFINITY VISION",
+     "when": "17/12 23:30"
+    },
+    "131225": {
+     "fmt": "INFINITY VISION",
+     "when": "17/12 13:30"
+    },
+    "131226": {
+     "fmt": "INFINITY VISION",
+     "when": "17/12 15:30"
+    },
+    "131227": {
+     "fmt": "INFINITY VISION",
+     "when": "18/12 09:30"
+    },
+    "131228": {
+     "fmt": "INFINITY VISION",
+     "when": "18/12 17:30"
+    },
+    "131229": {
+     "fmt": "INFINITY VISION",
+     "when": "18/12 11:30"
+    },
+    "131230": {
+     "fmt": "INFINITY VISION",
+     "when": "18/12 20:30"
+    },
+    "131231": {
+     "fmt": "INFINITY VISION",
+     "when": "19/12 13:30"
+    },
+    "131232": {
+     "fmt": "INFINITY VISION",
+     "when": "19/12 21:30"
+    },
+    "131233": {
+     "fmt": "INFINITY VISION",
+     "when": "19/12 10:30"
+    },
+    "131234": {
+     "fmt": "INFINITY VISION",
+     "when": "19/12 14:30"
+    },
+    "131235": {
+     "fmt": "INFINITY VISION",
+     "when": "19/12 22:30"
+    },
+    "131236": {
+     "fmt": "INFINITY VISION",
+     "when": "19/12 15:30"
+    },
+    "131237": {
+     "fmt": "INFINITY VISION",
+     "when": "19/12 23:30"
+    },
+    "131238": {
+     "fmt": "INFINITY VISION",
+     "when": "19/12 16:30"
+    },
+    "131239": {
+     "fmt": "INFINITY VISION",
+     "when": "19/12 00:30"
+    },
+    "131240": {
+     "fmt": "INFINITY VISION",
+     "when": "20/12 09:30"
+    },
+    "131241": {
+     "fmt": "INFINITY VISION",
+     "when": "20/12 11:30"
+    }
+   },
+   "title": "AVENGERS - DOOMSDAY",
+   "url": "https://www.arcadiacinema.com/scheda/avengers-doomsday/48784/"
+  },
+  "avengers-doomsday-original-version": {
+   "shows": {
+    "131185": {
+     "fmt": "ENERGIA INFINITY VISION ORIGINAL VERSION",
+     "when": "19/12 09:00"
+    },
+    "131188": {
+     "fmt": "INFINITY VISION ORIGINAL VERSION",
+     "when": "15/12 00:01"
+    },
+    "131190": {
+     "fmt": "INFINITY VISION ORIGINAL VERSION",
+     "when": "16/12 19:30"
+    }
+   },
+   "title": "AVENGERS - DOOMSDAY | ORIGINAL VERSION",
+   "url": "/scheda/avengers-doomsday-original-version/48787/3364/"
+  },
+  "avengers-endgame-extra": {
+   "shows": {
+    "131021": {
+     "fmt": "ENERGIA",
+     "when": "05/10 17:00"
+    },
+    "131022": {
+     "fmt": "ENERGIA",
+     "when": "07/10 17:00"
+    },
+    "131084": {
+     "fmt": "2D",
+     "when": "05/10 20:40"
+    },
+    "131086": {
+     "fmt": "2D",
+     "when": "06/10 20:40"
+    },
+    "131088": {
+     "fmt": "2D",
+     "when": "07/10 20:40"
+    }
+   },
+   "title": "AVENGERS: ENDGAME EXTRA",
+   "url": "/scheda/avengers-endgame-extra/48525/3364/"
+  },
+  "balcanica-le-vie-del-cinema": {
+   "shows": {
+    "130922": {
+     "fmt": "2D",
+     "when": "07/10 20:45"
+    }
+   },
+   "title": "BALCANICA - LE VIE DEL CINEMA",
+   "url": "/scheda/balcanica-le-vie-del-cinema/48714/3364/"
+  },
+  "digger-2026": {
+   "shows": {
+    "131060": {
+     "fmt": "2D",
+     "when": "05/10 17:10"
+    },
+    "131061": {
+     "fmt": "2D",
+     "when": "06/10 17:10"
+    },
+    "131062": {
+     "fmt": "2D",
+     "when": "07/10 17:10"
+    },
+    "131071": {
+     "fmt": "2D",
+     "when": "05/10 21:15"
+    },
+    "131072": {
+     "fmt": "2D",
+     "when": "06/10 21:15"
+    },
+    "131073": {
+     "fmt": "2D",
+     "when": "07/10 21:15"
+    }
+   },
+   "title": "DIGGER [2026]",
+   "url": "https://arcadiacinema.com/scheda/digger-2026/48062/"
+  },
+  "dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb-original-version": {
+   "shows": {
+    "131015": {
+     "fmt": "4K ORIGINAL VERSION",
+     "when": "13/10 20:45"
+    }
+   },
+   "title": "DR. STRANGELOVE OR: HOW I LEARNED TO STOP WORRYING AND LOVE THE BOMB | ORIGINAL VERSION",
+   "url": "/scheda/dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb-original-version/48709/3364/"
+  },
+  "dune-parte-tre": {
+   "shows": {
+    "130783": {
+     "fmt": "70MM ENERGIA",
+     "when": "15/12 20:00"
+    }
+   },
+   "title": "DUNE PARTE TRE",
+   "url": "https://arcadiacinema.com/scheda/dune-parte-tre/48067/"
+  },
+  "heart-of-the-beast-nel-profondo-selvaggio": {
+   "shows": {
+    "131085": {
+     "fmt": "2D",
+     "when": "05/10 17:35"
+    },
+    "131087": {
+     "fmt": "2D",
+     "when": "06/10 17:35"
+    },
+    "131089": {
+     "fmt": "2D",
+     "when": "07/10 17:35"
+    }
+   },
+   "title": "HEART OF THE BEAST - NEL PROFONDO SELVAGGIO",
+   "url": "/scheda/heart-of-the-beast-nel-profondo-selvaggio/48311/3364/"
+  },
+  "il-dottor-stranamore-ovvero-come-imparai-a-non-preoccuparmi-e-ad-amare-la-bomba": {
+   "shows": {
+    "131014": {
+     "fmt": "4K",
+     "when": "12/10 20:45"
+    }
+   },
+   "title": "IL DOTTOR STRANAMORE, OVVERO: COME IMPARAI A NON PREOCCUPARMI E AD AMARE LA BOMBA",
+   "url": "/scheda/il-dottor-stranamore-ovvero-come-imparai-a-non-preoccuparmi-e-ad-amare-la-bomba/48708/3364/"
+  },
+  "matrix-1999-riedizione": {
+   "shows": {
+    "131001": {
+     "fmt": "ENERGIA",
+     "when": "26/10 17:30"
+    },
+    "131002": {
+     "fmt": "ENERGIA",
+     "when": "26/10 21:00"
+    },
+    "131003": {
+     "fmt": "ENERGIA",
+     "when": "27/10 17:30"
+    }
+   },
+   "title": "MATRIX [1999] - RIEDIZIONE",
+   "url": "https://www.arcadiacinema.com/scheda/matrix-1999-riedizione/42023/"
+  },
+  "naza": {
+   "shows": {
+    "131105": {
+     "fmt": "2D",
+     "when": "06/10 17:30"
+    }
+   },
+   "title": "NAZA",
+   "url": "/scheda/naza/48682/3364/"
+  },
+  "odissea-2026": {
+   "shows": {
+    "130827": {
+     "fmt": "70MM ENERGIA",
+     "when": "05/10 21:00"
+    },
+    "130828": {
+     "fmt": "70MM ENERGIA",
+     "when": "06/10 17:00"
+    },
+    "130830": {
+     "fmt": "70MM ENERGIA",
+     "when": "07/10 21:00"
+    },
+    "131005": {
+     "fmt": "70MM ENERGIA",
+     "when": "08/10 17:00"
+    },
+    "131006": {
+     "fmt": "70MM ENERGIA",
+     "when": "09/10 21:00"
+    },
+    "131007": {
+     "fmt": "70MM ENERGIA",
+     "when": "10/10 17:00"
+    },
+    "131008": {
+     "fmt": "70MM ENERGIA",
+     "when": "10/10 21:00"
+    },
+    "131009": {
+     "fmt": "70MM ENERGIA",
+     "when": "11/10 13:00"
+    },
+    "131010": {
+     "fmt": "70MM ENERGIA",
+     "when": "11/10 17:00"
+    },
+    "131011": {
+     "fmt": "70MM ENERGIA",
+     "when": "12/10 21:00"
+    },
+    "131012": {
+     "fmt": "70MM ENERGIA",
+     "when": "13/10 17:00"
+    },
+    "131013": {
+     "fmt": "70MM ENERGIA",
+     "when": "14/10 21:00"
+    },
+    "131166": {
+     "fmt": "70MM ENERGIA",
+     "when": "08/10 21:00"
+    },
+    "131167": {
+     "fmt": "70MM ENERGIA",
+     "when": "09/10 17:00"
+    },
+    "131170": {
+     "fmt": "70MM ENERGIA",
+     "when": "11/10 09:00"
+    },
+    "131171": {
+     "fmt": "70MM ENERGIA",
+     "when": "11/10 21:00"
+    },
+    "131172": {
+     "fmt": "70MM ENERGIA",
+     "when": "12/10 17:00"
+    },
+    "131174": {
+     "fmt": "70MM ENERGIA",
+     "when": "14/10 17:00"
+    }
+   },
+   "title": "ODISSEA [2026]",
+   "url": "https://www.arcadiacinema.com/scheda/odissea-2026/47434/"
+  },
+  "primetime": {
+   "shows": {
+    "130921": {
+     "fmt": "2D",
+     "when": "14/10 20:45"
+    }
+   },
+   "title": "PRIMETIME",
+   "url": "/scheda/primetime/48697/3364/"
+  },
+  "quasi-vera": {
+   "shows": {
+    "131103": {
+     "fmt": "2D",
+     "when": "05/10 17:20"
+    },
+    "131106": {
+     "fmt": "2D",
+     "when": "06/10 20:35"
+    },
+    "131107": {
+     "fmt": "2D",
+     "when": "07/10 17:20"
+    }
+   },
+   "title": "QUASI VERA",
+   "url": "/scheda/quasi-vera/48449/3364/"
+  },
+  "resident-evil-2026": {
+   "shows": {
+    "131053": {
+     "fmt": "2D",
+     "when": "06/10 17:20"
+    },
+    "131055": {
+     "fmt": "2D",
+     "when": "07/10 20:30"
+    },
+    "131104": {
+     "fmt": "2D",
+     "when": "05/10 20:35"
+    }
+   },
+   "title": "RESIDENT EVIL [2026]",
+   "url": "/scheda/resident-evil-2026/48060/3364/"
+  },
+  "the-invite-il-piacere-e-tutto-nostro": {
+   "shows": {
+    "131051": {
+     "fmt": "2D",
+     "when": "05/10 20:30"
+    }
+   },
+   "title": "THE INVITE - IL PIACERE È TUTTO NOSTRO",
+   "url": "/scheda/the-invite-il-piacere-e-tutto-nostro/48405/3364/"
+  },
+  "the-matrix-1999-reissue-original-version": {
+   "shows": {
+    "131004": {
+     "fmt": "ENERGIA ORIGINAL VERSION",
+     "when": "27/10 21:00"
+    }
+   },
+   "title": "THE MATRIX [1999] - REISSUE | ORIGINAL VERSION",
+   "url": "/scheda/the-matrix-1999-reissue-original-version/48719/3364/"
+  },
+  "the-odyssey-2026-original-version": {
+   "shows": {
+    "130829": {
+     "fmt": "70MM ENERGIA ORIGINAL VERSION",
+     "when": "06/10 21:00"
+    },
+    "131149": {
+     "fmt": "70MM ENERGIA ORIGINAL VERSION",
+     "when": "10/10 13:00"
+    },
+    "131173": {
+     "fmt": "70MM ENERGIA ORIGINAL VERSION",
+     "when": "13/10 21:00"
+    }
+   },
+   "title": "THE ODYSSEY [2026] | ORIGINAL VERSION",
+   "url": "/scheda/the-odyssey-2026-original-version/47575/3364/"
+  },
+  "verity": {
+   "shows": {
+    "131050": {
+     "fmt": "2D",
+     "when": "05/10 17:25"
+    },
+    "131052": {
+     "fmt": "2D",
+     "when": "06/10 20:50"
+    },
+    "131054": {
+     "fmt": "2D",
+     "when": "07/10 17:25"
+    }
+   },
+   "title": "VERITY",
+   "url": "/scheda/verity/48063/3364/"
+  }
+ }
+}
