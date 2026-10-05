@@ -29,6 +29,7 @@ import re
 import sys
 import time
 from pathlib import Path
+from urllib.parse import quote, urljoin
 
 import requests
 from bs4 import BeautifulSoup
@@ -50,6 +51,8 @@ HEADERS = {
 BUY_RE = re.compile(r"/acquista/([^/]+)/(\d+)/(\d+)/(\d+)")
 # attributo title del link: "TITOLO FILM:  15/12 - 00:01"
 TITLE_RE = re.compile(r"^(?P<title>.+?):\s+(?P<date>\d{2}/\d{2})\s+-\s+(?P<time>\d{2}:\d{2})\s*$")
+# locandine dei film (non i banner della home, che stanno in /cdn/home/)
+POSTER_RE = re.compile(r"/cdn/movies/|img\.cine-vu\.it/locandineSchede")
 # /scheda/<slug>/<id>/...
 SCHEDA_RE = re.compile(r"/scheda/([^/]+)/\d+")
 
@@ -81,8 +84,17 @@ def following_text(a) -> str:
     return sib.get_text(" ", strip=True)
 
 
+def poster_for(a) -> str:
+    """Locandina del film: l'immagine di locandina che precede il link dell'orario."""
+    img = a.find_previous("img", src=POSTER_RE)
+    if img is None:
+        return ""
+    # alcuni indirizzi contengono caratteri come [ ] che Telegram non accetta
+    return quote(urljoin(BASE, img["src"]), safe=":/%?=&")
+
+
 def scrape(cinema: str) -> dict:
-    """Ritorna {slug: {title, url, shows: {id_proiezione: {when, fmt}}}}."""
+    """Ritorna {slug: {title, url, poster, shows: {id_proiezione: {when, fmt}}}}."""
     page = fetch(f"{BASE}/{cinema}")
     soup = BeautifulSoup(page, "html.parser")
 
@@ -100,7 +112,12 @@ def scrape(cinema: str) -> dict:
             continue
         film = films.setdefault(
             slug,
-            {"title": t.group("title").strip(), "url": scheda_urls.get(slug, f"{BASE}/{cinema}"), "shows": {}},
+            {
+                "title": t.group("title").strip(),
+                "url": scheda_urls.get(slug, f"{BASE}/{cinema}"),
+                "poster": poster_for(a),
+                "shows": {},
+            },
         )
         film["shows"][show_id] = {
             "when": f"{t.group('date')} {t.group('time')}",
@@ -109,10 +126,35 @@ def scrape(cinema: str) -> dict:
     return films
 
 
-def send(text: str) -> None:
+def send_photo(photo: str, text: str) -> bool:
+    """Invia la locandina con il testo come didascalia. False se Telegram la rifiuta."""
+    caption = text
+    if len(caption) > 1000:  # limite Telegram: 1024 caratteri
+        caption = "\n".join(text.split("\n")[:2])
+    try:
+        r = requests.post(
+            f"https://api.telegram.org/bot{TOKEN}/sendPhoto",
+            json={"chat_id": CHAT_ID, "photo": photo, "caption": caption, "parse_mode": "HTML"},
+            timeout=30,
+        )
+    except requests.RequestException as e:
+        print(f"Errore invio locandina: {e}", file=sys.stderr)
+        return False
+    if not r.ok:
+        print(f"Locandina rifiutata da Telegram ({r.status_code}): {r.text}", file=sys.stderr)
+        return False
+    time.sleep(1)
+    return caption == text  # se la didascalia era accorciata, il testo completo va inviato a parte
+
+
+def send(text: str, photo: str = "") -> None:
     if DRY_RUN:
         print("--- MESSAGGIO (dry run) ---")
+        if photo:
+            print(f"[locandina: {photo}]")
         print(re.sub(r"<[^>]+>", "", html.unescape(text)))
+        return
+    if photo and send_photo(photo, text):
         return
     for chunk in split_message(text):
         r = requests.post(
@@ -170,14 +212,16 @@ def diff_and_notify(cinema: str, old: dict, new: dict) -> None:
         if slug not in old:
             send(
                 f"🎬 <b>Nuovo film a {name}</b>\n<b>{esc(film['title'])}</b>\n\n"
-                f"{esc(format_shows(film['shows']))}\n\n{link}"
+                f"{esc(format_shows(film['shows']))}\n\n{link}",
+                film.get("poster", ""),
             )
             continue
         added = {i: s for i, s in film["shows"].items() if i not in old[slug]["shows"]}
         if added and watched(film["title"]):
             send(
                 f"🕒 <b>Nuovi orari a {name}</b>\n<b>{esc(film['title'])}</b>\n\n"
-                f"{esc(format_shows(added))}\n\n{link}"
+                f"{esc(format_shows(added))}\n\n{link}",
+                film.get("poster", ""),
             )
 
 
