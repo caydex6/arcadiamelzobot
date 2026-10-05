@@ -1,6 +1,7 @@
 {
  "melzo": {
-  "avengers-doomsday-test": {
+  "avengers-doomsday": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/c9e78d4fdbcc781a173ad231fc128c26b261ea8e6b6c2b19ee6940a1acf6fb7fb68755bb19bef93a6556084e56478cb86739411a3cb1c4f86d999bf49da5104d.jpg",
    "shows": {
     "131181": {
      "fmt": "ENERGIA INFINITY VISION",
@@ -151,6 +152,7 @@
    "url": "https://www.arcadiacinema.com/scheda/avengers-doomsday/48784/"
   },
   "avengers-doomsday-original-version": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/0a41e3e716652025ccba43887f968e9223b3760f389eeda7e13c5b7932dd996e647ae4478c7e3b0fd874745c6fb9ed3a9428a7ea4b4f41017c95de3d0ac14556.jpg",
    "shows": {
     "131185": {
      "fmt": "ENERGIA INFINITY VISION ORIGINAL VERSION",
@@ -169,6 +171,7 @@
    "url": "/scheda/avengers-doomsday-original-version/48787/3364/"
   },
   "avengers-endgame-extra": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/b182d1beda5de63f258d7957c611853ed8aa343553d2bce273d66507f6781cabd31e4aa0463b22a71e02fb668dee431f3cfb0bc40f77432fa4de24299113f995.jpg",
    "shows": {
     "131021": {
      "fmt": "ENERGIA",
@@ -195,6 +198,7 @@
    "url": "/scheda/avengers-endgame-extra/48525/3364/"
   },
   "balcanica-le-vie-del-cinema": {
+   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48714.jpg",
    "shows": {
     "130922": {
      "fmt": "2D",
@@ -205,6 +209,7 @@
    "url": "/scheda/balcanica-le-vie-del-cinema/48714/3364/"
   },
   "digger-2026": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/eec4df2672c82ce0bbacb6c95f549be5a8c53aebc5a4c8c160fe732c6c69776f972f2a1af4593b9f30b4cd5bee0c9fd3e6bae69eaa2ff31aeb9c98a537871b1c.jpg",
    "shows": {
     "131060": {
      "fmt": "2D",
@@ -235,6 +240,7 @@
    "url": "https://arcadiacinema.com/scheda/digger-2026/48062/"
   },
   "dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb-original-version": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/d8f2fb37ce5def79ce9e880c23f5117b3613ac37463f22644e122d3fa704d5ca9da58b4ac1f644aa488bda3706c386997ae0c874e2a83ec6e45733cf7f97eea8.jpg",
    "shows": {
     "131015": {
      "fmt": "4K ORIGINAL VERSION",
@@ -245,6 +251,7 @@
    "url": "/scheda/dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb-original-version/48709/3364/"
   },
   "dune-parte-tre": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/a0d30d29ccbdb1ecd67c31e8b6bd1863976ccf60df5664f7667f6a2044e86bbbffe72fb3257b5fcde1d0501e07cce6dc8a8e7125619173af9e9bf85740b535b2.jpg",
    "shows": {
     "130783": {
      "fmt": "70MM ENERGIA",
@@ -255,6 +262,7 @@
    "url": "https://arcadiacinema.com/scheda/dune-parte-tre/48067/"
   },
   "heart-of-the-beast-nel-profondo-selvaggio": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/40f1fd35dfdd397f6f600f01d2dcda4941633ffac90fb7bacf0f81a1f3b70a349103842160b654b4af273baecd7518482540d32d2eecc526e8241017c2efb969.jpg",
    "shows": {
     "131085": {
      "fmt": "2D",
@@ -273,6 +281,7 @@
    "url": "/scheda/heart-of-the-beast-nel-profondo-selvaggio/48311/3364/"
   },
   "il-dottor-stranamore-ovvero-come-imparai-a-non-preoccuparmi-e-ad-amare-la-bomba": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/328d524e32bc06299ccb20e414f80cde7f2cd628bbac823c26a78c62b8a63df9accc28ef8b7e7289b3aa5dd0e4b2187dc071e24956306e5e4fdf5eb2819c98bb.jpg",
    "shows": {
     "131014": {
      "fmt": "4K",
@@ -283,6 +292,7 @@
    "url": "/scheda/il-dottor-stranamore-ovvero-come-imparai-a-non-preoccuparmi-e-ad-amare-la-bomba/48708/3364/"
   },
   "matrix-1999-riedizione": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/e6de55755c2bdf8650fcd3b6d730f9c9285179f41cf88bb1e1d65fedf4d5f6c90d9450e532f7cf87fa5458332e67caff30f2e54e3f07a17687056030100c5814.jpg",
    "shows": {
     "131001": {
      "fmt": "ENERGIA",
@@ -301,6 +311,7 @@
    "url": "https://www.arcadiacinema.com/scheda/matrix-1999-riedizione/42023/"
   },
   "naza": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/d3a32a04c4ab9961e173125abbc60a2196c1c327de16f4cf51880cde5d77f6aa38101aaf283f2e2476d065194a2b505f7a2020ee5e67de8d0aa3cf465f614720.jpg",
    "shows": {
     "131105": {
      "fmt": "2D",
@@ -311,6 +322,7 @@
    "url": "/scheda/naza/48682/3364/"
   },
   "odissea-2026": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/42f162380c417f85f9f1dbc6a445a514d0d70fc5f7cfe73b9c9f50ca47813cd238783cae53685516d857950f1f6c4c57b01d5a97db088ffae736870e4919acda.jpg",
    "shows": {
     "130827": {
      "fmt": "70MM ENERGIA",
@@ -389,6 +401,7 @@
    "url": "https://www.arcadiacinema.com/scheda/odissea-2026/47434/"
   },
   "primetime": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/6bd5e36a28f7c6b2ef9495dc5e1ac5e87a484f879fc3053c256cd4496470fe9af22aa965342aa14f4f3edaf229183dafb565bec85916296f917a93e3d1f3c049.jpg",
    "shows": {
     "130921": {
      "fmt": "2D",
@@ -399,6 +412,7 @@
    "url": "/scheda/primetime/48697/3364/"
   },
   "quasi-vera": {
+   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48449.jpg",
    "shows": {
     "131103": {
      "fmt": "2D",
@@ -417,6 +431,7 @@
    "url": "/scheda/quasi-vera/48449/3364/"
   },
   "resident-evil-2026": {
+   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48060.jpg",
    "shows": {
     "131053": {
      "fmt": "2D",
@@ -435,6 +450,7 @@
    "url": "/scheda/resident-evil-2026/48060/3364/"
   },
   "the-invite-il-piacere-e-tutto-nostro": {
+   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48405.jpg",
    "shows": {
     "131051": {
      "fmt": "2D",
@@ -445,6 +461,7 @@
    "url": "/scheda/the-invite-il-piacere-e-tutto-nostro/48405/3364/"
   },
   "the-matrix-1999-reissue-original-version": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/1c48cf5f5092bdb2d4511db1f6259d23b76f9825948c2bccab2db953663f8e0c2efd43222e3a65e96b36aa1a32be8e19769cfc97030847c030adef8c474d39ce.jpg",
    "shows": {
     "131004": {
      "fmt": "ENERGIA ORIGINAL VERSION",
@@ -455,6 +472,7 @@
    "url": "/scheda/the-matrix-1999-reissue-original-version/48719/3364/"
   },
   "the-odyssey-2026-original-version": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/7efd1bf999801fe57d7f176c695e11be0d008f8fa45df4e1a7e126c74b9743029fec9749e4ae4fc306860754205442cb7c5b6fbcd3d6eb29d50efadd01192d00.jpg",
    "shows": {
     "130829": {
      "fmt": "70MM ENERGIA ORIGINAL VERSION",
@@ -473,6 +491,7 @@
    "url": "/scheda/the-odyssey-2026-original-version/47575/3364/"
   },
   "verity": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/4e63a95d87a77a438cecd49369d3b751befd8de5bd10687f6cad29440981889dd4e57e97d0718bc3bdf3a612a0112b131b848bc2bc6ef5a819e87bda3c75e096.jpg",
    "shows": {
     "131050": {
      "fmt": "2D",
