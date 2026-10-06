@@ -184,6 +184,14 @@
     "131088": {
      "fmt": "2D",
      "when": "07/10 20:40"
+    },
+    "131287": {
+     "fmt": "2D",
+     "when": "11/10 17:20"
+    },
+    "131296": {
+     "fmt": "2D",
+     "when": "10/10 14:40"
     }
    },
    "title": "AVENGERS: ENDGAME EXTRA",
@@ -218,10 +226,49 @@
     "131073": {
      "fmt": "2D",
      "when": "07/10 21:15"
+    },
+    "131282": {
+     "fmt": "2D",
+     "when": "08/10 20:50"
+    },
+    "131284": {
+     "fmt": "2D",
+     "when": "09/10 22:15"
+    },
+    "131286": {
+     "fmt": "2D",
+     "when": "10/10 18:10"
+    },
+    "131288": {
+     "fmt": "2D",
+     "when": "11/10 20:50"
+    },
+    "131292": {
+     "fmt": "2D",
+     "when": "13/10 20:50"
+    },
+    "131294": {
+     "fmt": "2D",
+     "when": "14/10 17:20"
+    },
+    "131299": {
+     "fmt": "2D",
+     "when": "12/10 17:20"
     }
    },
    "title": "DIGGER [2026]",
    "url": "https://arcadiacinema.com/scheda/digger-2026/48062/"
+  },
+  "digger-2026-original-version": {
+   "poster": "https://www.arcadiacinema.com/cdn/movies/9cb48b820726607fe280e56dddc99b4d11d928c4ab45af57ab0906192a157e91ecd3007e75ddfb7ecb2f08d112591f8aa7ac57bc9063411f4f1c32ab9748dce8.jpg",
+   "shows": {
+    "131298": {
+     "fmt": "ORIGINAL VERSION",
+     "when": "11/10 11:00"
+    }
+   },
+   "title": "DIGGER [2026] | ORIGINAL VERSION",
+   "url": "/scheda/digger-2026-original-version/48665/3364/"
   },
   "dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb-original-version": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/d8f2fb37ce5def79ce9e880c23f5117b3613ac37463f22644e122d3fa704d5ca9da58b4ac1f644aa488bda3706c386997ae0c874e2a83ec6e45733cf7f97eea8.jpg",
@@ -255,6 +302,18 @@
     "131089": {
      "fmt": "2D",
      "when": "07/10 17:35"
+    },
+    "131290": {
+     "fmt": "2D",
+     "when": "12/10 20:40"
+    },
+    "131295": {
+     "fmt": "2D",
+     "when": "09/10 17:20"
+    },
+    "131316": {
+     "fmt": "2D",
+     "when": "10/10 15:30"
     }
    },
    "title": "HEART OF THE BEAST - NEL PROFONDO SELVAGGIO",
@@ -270,6 +329,159 @@
    },
    "title": "IL DOTTOR STRANAMORE, OVVERO: COME IMPARAI A NON PREOCCUPARMI E AD AMARE LA BOMBA",
    "url": "/scheda/il-dottor-stranamore-ovvero-come-imparai-a-non-preoccuparmi-e-ad-amare-la-bomba/48708/3364/"
+  },
+  "lalbero-di-molto-lontano": {
+   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48721.jpg",
+   "shows": {
+    "131262": {
+     "fmt": "2D",
+     "when": "08/10 17:10"
+    },
+    "131264": {
+     "fmt": "2D",
+     "when": "09/10 17:10"
+    },
+    "131266": {
+     "fmt": "2D",
+     "when": "10/10 17:30"
+    },
+    "131268": {
+     "fmt": "2D",
+     "when": "11/10 15:20"
+    },
+    "131270": {
+     "fmt": "2D",
+     "when": "12/10 17:10"
+    },
+    "131272": {
+     "fmt": "2D",
+     "when": "13/10 17:10"
+    },
+    "131274": {
+     "fmt": "2D",
+     "when": "14/10 17:10"
+    },
+    "131277": {
+     "fmt": "2D",
+     "when": "10/10 15:10"
+    },
+    "131279": {
+     "fmt": "2D",
+     "when": "11/10 10:40"
+    }
+   },
+   "title": "L'ALBERO DI MOLTO LONTANO",
+   "url": "/scheda/lalbero-di-molto-lontano/48721/3364/"
+  },
+  "lestranea": {
+   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48593.jpg",
+   "shows": {
+    "131297": {
+     "fmt": "2D",
+     "when": "11/10 15:00"
+    },
+    "131300": {
+     "fmt": "2D",
+     "when": "08/10 17:25"
+    },
+    "131302": {
+     "fmt": "2D",
+     "when": "09/10 17:25"
+    },
+    "131304": {
+     "fmt": "2D",
+     "when": "10/10 20:15"
+    },
+    "131308": {
+     "fmt": "2D",
+     "when": "12/10 20:30"
+    },
+    "131310": {
+     "fmt": "2D",
+     "when": "13/10 20:30"
+    },
+    "131312": {
+     "fmt": "2D",
+     "when": "14/10 20:30"
+    },
+    "131319": {
+     "fmt": "2D",
+     "when": "08/10 20:30"
+    },
+    "131321": {
+     "fmt": "2D",
+     "when": "09/10 20:15"
+    },
+    "131323": {
+     "fmt": "2D",
+     "when": "10/10 17:10"
+    },
+    "131325": {
+     "fmt": "2D",
+     "when": "11/10 20:30"
+    },
+    "131326": {
+     "fmt": "2D",
+     "when": "09/10 22:35"
+    },
+    "131328": {
+     "fmt": "2D",
+     "when": "10/10 22:35"
+    },
+    "131330": {
+     "fmt": "2D",
+     "when": "11/10 17:10"
+    }
+   },
+   "title": "L'ESTRANEA",
+   "url": "/scheda/lestranea/48593/3364/"
+  },
+  "mammina": {
+   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48720.jpg",
+   "shows": {
+    "131263": {
+     "fmt": "2D",
+     "when": "08/10 21:10"
+    },
+    "131265": {
+     "fmt": "2D",
+     "when": "09/10 22:40"
+    },
+    "131267": {
+     "fmt": "2D",
+     "when": "10/10 20:30"
+    },
+    "131269": {
+     "fmt": "2D",
+     "when": "11/10 21:10"
+    },
+    "131271": {
+     "fmt": "2D",
+     "when": "12/10 21:10"
+    },
+    "131273": {
+     "fmt": "2D",
+     "when": "13/10 21:10"
+    },
+    "131275": {
+     "fmt": "2D",
+     "when": "14/10 21:10"
+    },
+    "131276": {
+     "fmt": "2D",
+     "when": "09/10 20:30"
+    },
+    "131278": {
+     "fmt": "2D",
+     "when": "10/10 22:40"
+    },
+    "131280": {
+     "fmt": "2D",
+     "when": "11/10 18:00"
+    }
+   },
+   "title": "MAMMINA",
+   "url": "/scheda/mammina/48720/3364/"
   },
   "matrix-1999-riedizione": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/e6de55755c2bdf8650fcd3b6d730f9c9285179f41cf88bb1e1d65fedf4d5f6c90d9450e532f7cf87fa5458332e67caff30f2e54e3f07a17687056030100c5814.jpg",
@@ -296,6 +508,42 @@
     "131105": {
      "fmt": "2D",
      "when": "06/10 17:30"
+    },
+    "131318": {
+     "fmt": "2D",
+     "when": "08/10 17:30"
+    },
+    "131320": {
+     "fmt": "2D",
+     "when": "09/10 17:30"
+    },
+    "131322": {
+     "fmt": "2D",
+     "when": "10/10 15:20"
+    },
+    "131324": {
+     "fmt": "2D",
+     "when": "11/10 10:50"
+    },
+    "131327": {
+     "fmt": "2D",
+     "when": "10/10 20:00"
+    },
+    "131329": {
+     "fmt": "2D",
+     "when": "11/10 15:20"
+    },
+    "131331": {
+     "fmt": "2D",
+     "when": "12/10 17:30"
+    },
+    "131332": {
+     "fmt": "2D",
+     "when": "13/10 17:30"
+    },
+    "131333": {
+     "fmt": "2D",
+     "when": "14/10 17:30"
     }
    },
    "title": "NAZA",
@@ -397,10 +645,6 @@
     "131107": {
      "fmt": "2D",
      "when": "07/10 17:20"
-    },
-    "131261": {
-     "fmt": "2D",
-     "when": "06/10 22:57"
     }
    },
    "title": "QUASI VERA",
@@ -451,6 +695,53 @@
    "title": "THE ODYSSEY [2026] | ORIGINAL VERSION",
    "url": "/scheda/the-odyssey-2026-original-version/47575/3364/"
   },
+  "the-social-il-prezzo-della-verita": {
+   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48312.jpg",
+   "shows": {
+    "131301": {
+     "fmt": "2D",
+     "when": "08/10 20:20"
+    },
+    "131303": {
+     "fmt": "2D",
+     "when": "09/10 20:00"
+    },
+    "131305": {
+     "fmt": "2D",
+     "when": "10/10 22:30"
+    },
+    "131307": {
+     "fmt": "2D",
+     "when": "11/10 20:50"
+    },
+    "131309": {
+     "fmt": "2D",
+     "when": "12/10 17:25"
+    },
+    "131311": {
+     "fmt": "2D",
+     "when": "13/10 17:25"
+    },
+    "131313": {
+     "fmt": "2D",
+     "when": "14/10 17:25"
+    },
+    "131314": {
+     "fmt": "2D",
+     "when": "09/10 22:30"
+    },
+    "131315": {
+     "fmt": "2D",
+     "when": "10/10 17:40"
+    },
+    "131317": {
+     "fmt": "2D",
+     "when": "11/10 15:10"
+    }
+   },
+   "title": "THE SOCIAL - IL PREZZO DELLA VERITÀ",
+   "url": "/scheda/the-social-il-prezzo-della-verita/48312/3364/"
+  },
   "verity": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/4e63a95d87a77a438cecd49369d3b751befd8de5bd10687f6cad29440981889dd4e57e97d0718bc3bdf3a612a0112b131b848bc2bc6ef5a819e87bda3c75e096.jpg",
    "shows": {
@@ -461,6 +752,30 @@
     "131054": {
      "fmt": "2D",
      "when": "07/10 17:25"
+    },
+    "131281": {
+     "fmt": "2D",
+     "when": "08/10 17:20"
+    },
+    "131283": {
+     "fmt": "2D",
+     "when": "09/10 19:50"
+    },
+    "131285": {
+     "fmt": "2D",
+     "when": "10/10 21:20"
+    },
+    "131291": {
+     "fmt": "2D",
+     "when": "13/10 17:20"
+    },
+    "131293": {
+     "fmt": "2D",
+     "when": "14/10 20:40"
+    },
+    "131306": {
+     "fmt": "2D",
+     "when": "11/10 17:40"
     }
    },
    "title": "VERITY",
