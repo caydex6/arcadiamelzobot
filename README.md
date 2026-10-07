@@ -1,2 +1,2 @@
 # arcadiamelzobot
-A Bot capable of tracking Arcadia cinema's schedule.
+A bot capable of tracking Arcadia cinema's schedule.
