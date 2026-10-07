@@ -177,10 +177,6 @@
      "fmt": "ENERGIA",
      "when": "07/10 17:00"
     },
-    "131086": {
-     "fmt": "2D",
-     "when": "06/10 20:40"
-    },
     "131088": {
      "fmt": "2D",
      "when": "07/10 20:40"
@@ -211,17 +207,9 @@
   "digger-2026": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/eec4df2672c82ce0bbacb6c95f549be5a8c53aebc5a4c8c160fe732c6c69776f972f2a1af4593b9f30b4cd5bee0c9fd3e6bae69eaa2ff31aeb9c98a537871b1c.jpg",
    "shows": {
-    "131061": {
-     "fmt": "2D",
-     "when": "06/10 17:10"
-    },
     "131062": {
      "fmt": "2D",
      "when": "07/10 17:10"
-    },
-    "131072": {
-     "fmt": "2D",
-     "when": "06/10 21:15"
     },
     "131073": {
      "fmt": "2D",
@@ -295,10 +283,6 @@
   "heart-of-the-beast-nel-profondo-selvaggio": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/40f1fd35dfdd397f6f600f01d2dcda4941633ffac90fb7bacf0f81a1f3b70a349103842160b654b4af273baecd7518482540d32d2eecc526e8241017c2efb969.jpg",
    "shows": {
-    "131087": {
-     "fmt": "2D",
-     "when": "06/10 17:35"
-    },
     "131089": {
      "fmt": "2D",
      "when": "07/10 17:35"
@@ -505,10 +489,6 @@
   "naza": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/d3a32a04c4ab9961e173125abbc60a2196c1c327de16f4cf51880cde5d77f6aa38101aaf283f2e2476d065194a2b505f7a2020ee5e67de8d0aa3cf465f614720.jpg",
    "shows": {
-    "131105": {
-     "fmt": "2D",
-     "when": "06/10 17:30"
-    },
     "131318": {
      "fmt": "2D",
      "when": "08/10 17:30"
@@ -552,10 +532,6 @@
   "odissea-2026": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/42f162380c417f85f9f1dbc6a445a514d0d70fc5f7cfe73b9c9f50ca47813cd238783cae53685516d857950f1f6c4c57b01d5a97db088ffae736870e4919acda.jpg",
    "shows": {
-    "130828": {
-     "fmt": "70MM ENERGIA",
-     "when": "06/10 17:00"
-    },
     "130830": {
      "fmt": "70MM ENERGIA",
      "when": "07/10 21:00"
@@ -638,10 +614,6 @@
   "quasi-vera": {
    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48449.jpg",
    "shows": {
-    "131106": {
-     "fmt": "2D",
-     "when": "06/10 20:35"
-    },
     "131107": {
      "fmt": "2D",
      "when": "07/10 17:20"
@@ -653,10 +625,6 @@
   "resident-evil-2026": {
    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48060.jpg",
    "shows": {
-    "131053": {
-     "fmt": "2D",
-     "when": "06/10 17:20"
-    },
     "131055": {
      "fmt": "2D",
      "when": "07/10 20:30"
@@ -679,10 +647,6 @@
   "the-odyssey-2026-original-version": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/7efd1bf999801fe57d7f176c695e11be0d008f8fa45df4e1a7e126c74b9743029fec9749e4ae4fc306860754205442cb7c5b6fbcd3d6eb29d50efadd01192d00.jpg",
    "shows": {
-    "130829": {
-     "fmt": "70MM ENERGIA ORIGINAL VERSION",
-     "when": "06/10 21:00"
-    },
     "131149": {
      "fmt": "70MM ENERGIA ORIGINAL VERSION",
      "when": "10/10 13:00"
@@ -745,10 +709,6 @@
   "verity": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/4e63a95d87a77a438cecd49369d3b751befd8de5bd10687f6cad29440981889dd4e57e97d0718bc3bdf3a612a0112b131b848bc2bc6ef5a819e87bda3c75e096.jpg",
    "shows": {
-    "131052": {
-     "fmt": "2D",
-     "when": "06/10 20:50"
-    },
     "131054": {
      "fmt": "2D",
      "when": "07/10 17:25"
