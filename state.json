@@ -218,14 +218,6 @@
   "avengers-endgame-extra": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/b182d1beda5de63f258d7957c611853ed8aa343553d2bce273d66507f6781cabd31e4aa0463b22a71e02fb668dee431f3cfb0bc40f77432fa4de24299113f995.jpg",
    "shows": {
-    "131022": {
-     "fmt": "ENERGIA",
-     "when": "07/10 17:00"
-    },
-    "131088": {
-     "fmt": "2D",
-     "when": "07/10 20:40"
-    },
     "131287": {
      "fmt": "2D",
      "when": "11/10 17:20"
@@ -238,28 +230,9 @@
    "title": "AVENGERS: ENDGAME EXTRA",
    "url": "/scheda/avengers-endgame-extra/48525/3364/"
   },
-  "balcanica-le-vie-del-cinema": {
-   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48714.jpg",
-   "shows": {
-    "130922": {
-     "fmt": "2D",
-     "when": "07/10 20:45"
-    }
-   },
-   "title": "BALCANICA - LE VIE DEL CINEMA",
-   "url": "/scheda/balcanica-le-vie-del-cinema/48714/3364/"
-  },
   "digger-2026": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/eec4df2672c82ce0bbacb6c95f549be5a8c53aebc5a4c8c160fe732c6c69776f972f2a1af4593b9f30b4cd5bee0c9fd3e6bae69eaa2ff31aeb9c98a537871b1c.jpg",
    "shows": {
-    "131062": {
-     "fmt": "2D",
-     "when": "07/10 17:10"
-    },
-    "131073": {
-     "fmt": "2D",
-     "when": "07/10 21:15"
-    },
     "131282": {
      "fmt": "2D",
      "when": "08/10 20:50"
@@ -310,10 +283,6 @@
   "heart-of-the-beast-nel-profondo-selvaggio": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/40f1fd35dfdd397f6f600f01d2dcda4941633ffac90fb7bacf0f81a1f3b70a349103842160b654b4af273baecd7518482540d32d2eecc526e8241017c2efb969.jpg",
    "shows": {
-    "131089": {
-     "fmt": "2D",
-     "when": "07/10 17:35"
-    },
     "131290": {
      "fmt": "2D",
      "when": "12/10 20:40"
@@ -567,10 +536,6 @@
   "odissea-2026": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/7efd1bf999801fe57d7f176c695e11be0d008f8fa45df4e1a7e126c74b9743029fec9749e4ae4fc306860754205442cb7c5b6fbcd3d6eb29d50efadd01192d00.jpg",
    "shows": {
-    "130830": {
-     "fmt": "70MM ENERGIA",
-     "when": "07/10 21:00"
-    },
     "131005": {
      "fmt": "70MM ENERGIA",
      "when": "08/10 17:00"
@@ -654,28 +619,6 @@
    "title": "PRIMETIME",
    "url": "/scheda/primetime/48697/3364/"
   },
-  "quasi-vera": {
-   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48449.jpg",
-   "shows": {
-    "131107": {
-     "fmt": "2D",
-     "when": "07/10 17:20"
-    }
-   },
-   "title": "QUASI VERA",
-   "url": "/scheda/quasi-vera/48449/3364/"
-  },
-  "resident-evil-2026": {
-   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48060.jpg",
-   "shows": {
-    "131055": {
-     "fmt": "2D",
-     "when": "07/10 20:30"
-    }
-   },
-   "title": "RESIDENT EVIL [2026]",
-   "url": "/scheda/resident-evil-2026/48060/3364/"
-  },
   "the-social-il-prezzo-della-verita": {
    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48312.jpg",
    "shows": {
@@ -726,10 +669,6 @@
   "verity": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/4e63a95d87a77a438cecd49369d3b751befd8de5bd10687f6cad29440981889dd4e57e97d0718bc3bdf3a612a0112b131b848bc2bc6ef5a819e87bda3c75e096.jpg",
    "shows": {
-    "131054": {
-     "fmt": "2D",
-     "when": "07/10 17:25"
-    },
     "131281": {
      "fmt": "2D",
      "when": "08/10 17:20"
