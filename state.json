@@ -19,6 +19,10 @@
      "fmt": "ENERGIA INFINITY VISION",
      "when": "18/12 21:00"
     },
+    "131185": {
+     "fmt": "FILM IN INGLESE INFINITY VISION ENERGIA",
+     "when": "19/12 09:00"
+    },
     "131186": {
      "fmt": "ENERGIA INFINITY VISION",
      "when": "20/12 13:00"
@@ -27,9 +31,17 @@
      "fmt": "INFINITY VISION",
      "when": "15/12 00:01"
     },
+    "131188": {
+     "fmt": "FILM IN INGLESE INFINITY VISION",
+     "when": "15/12 00:01"
+    },
     "131189": {
      "fmt": "INFINITY VISION",
      "when": "16/12 09:30"
+    },
+    "131190": {
+     "fmt": "FILM IN INGLESE INFINITY VISION",
+     "when": "16/12 19:30"
     },
     "131191": {
      "fmt": "INFINITY VISION",
@@ -138,29 +150,70 @@
     "131341": {
      "fmt": "ENERGIA INFINITY VISION",
      "when": "20/12 09:00"
+    },
+    "131342": {
+     "fmt": "ENERGIA INFINITY VISION",
+     "when": "21/12 13:00"
+    },
+    "131343": {
+     "fmt": "ENERGIA INFINITY VISION",
+     "when": "21/12 21:00"
+    },
+    "131344": {
+     "fmt": "ENERGIA INFINITY VISION",
+     "when": "22/12 09:00"
+    },
+    "131345": {
+     "fmt": "ENERGIA INFINITY VISION",
+     "when": "22/12 17:00"
+    },
+    "131346": {
+     "fmt": "ENERGIA INFINITY VISION",
+     "when": "23/12 13:00"
+    },
+    "131347": {
+     "fmt": "ENERGIA INFINITY VISION",
+     "when": "23/12 21:00"
+    },
+    "131348": {
+     "fmt": "INFINITY VISION",
+     "when": "20/12 17:30"
+    },
+    "131349": {
+     "fmt": "INFINITY VISION",
+     "when": "20/12 21:30"
+    },
+    "131350": {
+     "fmt": "INFINITY VISION",
+     "when": "20/12 20:30"
+    },
+    "131351": {
+     "fmt": "INFINITY VISION",
+     "when": "21/12 09:30"
+    },
+    "131352": {
+     "fmt": "INFINITY VISION",
+     "when": "21/12 17:30"
+    },
+    "131353": {
+     "fmt": "INFINITY VISION",
+     "when": "22/12 13:30"
+    },
+    "131354": {
+     "fmt": "INFINITY VISION",
+     "when": "22/12 21:30"
+    },
+    "131355": {
+     "fmt": "INFINITY VISION",
+     "when": "23/12 09:30"
+    },
+    "131356": {
+     "fmt": "INFINITY VISION",
+     "when": "23/12 17:30"
     }
    },
    "title": "AVENGERS - DOOMSDAY",
    "url": "https://www.arcadiacinema.com/scheda/avengers-doomsday/48784/"
-  },
-  "avengers-doomsday-original-version": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/0a41e3e716652025ccba43887f968e9223b3760f389eeda7e13c5b7932dd996e647ae4478c7e3b0fd874745c6fb9ed3a9428a7ea4b4f41017c95de3d0ac14556.jpg",
-   "shows": {
-    "131185": {
-     "fmt": "ENERGIA INFINITY VISION ORIGINAL VERSION",
-     "when": "19/12 09:00"
-    },
-    "131188": {
-     "fmt": "INFINITY VISION ORIGINAL VERSION",
-     "when": "15/12 00:01"
-    },
-    "131190": {
-     "fmt": "INFINITY VISION ORIGINAL VERSION",
-     "when": "16/12 19:30"
-    }
-   },
-   "title": "AVENGERS - DOOMSDAY | ORIGINAL VERSION",
-   "url": "/scheda/avengers-doomsday-original-version/48787/3364/"
   },
   "avengers-endgame-extra": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/b182d1beda5de63f258d7957c611853ed8aa343553d2bce273d66507f6781cabd31e4aa0463b22a71e02fb668dee431f3cfb0bc40f77432fa4de24299113f995.jpg",
@@ -231,6 +284,10 @@
      "fmt": "2D",
      "when": "14/10 17:20"
     },
+    "131298": {
+     "fmt": "FILM IN INGLESE",
+     "when": "11/10 11:00"
+    },
     "131299": {
      "fmt": "2D",
      "when": "12/10 17:20"
@@ -238,28 +295,6 @@
    },
    "title": "DIGGER [2026]",
    "url": "https://arcadiacinema.com/scheda/digger-2026/48062/"
-  },
-  "digger-2026-original-version": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/9cb48b820726607fe280e56dddc99b4d11d928c4ab45af57ab0906192a157e91ecd3007e75ddfb7ecb2f08d112591f8aa7ac57bc9063411f4f1c32ab9748dce8.jpg",
-   "shows": {
-    "131298": {
-     "fmt": "ORIGINAL VERSION",
-     "when": "11/10 11:00"
-    }
-   },
-   "title": "DIGGER [2026] | ORIGINAL VERSION",
-   "url": "/scheda/digger-2026-original-version/48665/3364/"
-  },
-  "dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb-original-version": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/d8f2fb37ce5def79ce9e880c23f5117b3613ac37463f22644e122d3fa704d5ca9da58b4ac1f644aa488bda3706c386997ae0c874e2a83ec6e45733cf7f97eea8.jpg",
-   "shows": {
-    "131015": {
-     "fmt": "4K ORIGINAL VERSION",
-     "when": "13/10 20:45"
-    }
-   },
-   "title": "DR. STRANGELOVE OR: HOW I LEARNED TO STOP WORRYING AND LOVE THE BOMB | ORIGINAL VERSION",
-   "url": "/scheda/dr-strangelove-or-how-i-learned-to-stop-worrying-and-love-the-bomb-original-version/48709/3364/"
   },
   "dune-parte-tre": {
    "poster": "https://www.arcadiacinema.com/cdn/movies/a0d30d29ccbdb1ecd67c31e8b6bd1863976ccf60df5664f7667f6a2044e86bbbffe72fb3257b5fcde1d0501e07cce6dc8a8e7125619173af9e9bf85740b535b2.jpg",
@@ -301,6 +336,10 @@
     "131014": {
      "fmt": "4K",
      "when": "12/10 20:45"
+    },
+    "131015": {
+     "fmt": "FILM IN INGLESE 4K",
+     "when": "13/10 20:45"
     }
    },
    "title": "IL DOTTOR STRANAMORE, OVVERO: COME IMPARAI A NON PREOCCUPARMI E AD AMARE LA BOMBA",
@@ -460,7 +499,7 @@
    "url": "/scheda/mammina/48720/3364/"
   },
   "matrix-1999-riedizione": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/e6de55755c2bdf8650fcd3b6d730f9c9285179f41cf88bb1e1d65fedf4d5f6c90d9450e532f7cf87fa5458332e67caff30f2e54e3f07a17687056030100c5814.jpg",
+   "poster": "https://www.arcadiacinema.com/cdn/movies/1c48cf5f5092bdb2d4511db1f6259d23b76f9825948c2bccab2db953663f8e0c2efd43222e3a65e96b36aa1a32be8e19769cfc97030847c030adef8c474d39ce.jpg",
    "shows": {
     "131001": {
      "fmt": "ENERGIA",
@@ -473,6 +512,10 @@
     "131003": {
      "fmt": "ENERGIA",
      "when": "27/10 17:30"
+    },
+    "131004": {
+     "fmt": "FILM IN INGLESE ENERGIA",
+     "when": "27/10 21:00"
     }
    },
    "title": "MATRIX [1999] - RIEDIZIONE",
@@ -522,7 +565,7 @@
    "url": "/scheda/naza/48682/3364/"
   },
   "odissea-2026": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/42f162380c417f85f9f1dbc6a445a514d0d70fc5f7cfe73b9c9f50ca47813cd238783cae53685516d857950f1f6c4c57b01d5a97db088ffae736870e4919acda.jpg",
+   "poster": "https://www.arcadiacinema.com/cdn/movies/7efd1bf999801fe57d7f176c695e11be0d008f8fa45df4e1a7e126c74b9743029fec9749e4ae4fc306860754205442cb7c5b6fbcd3d6eb29d50efadd01192d00.jpg",
    "shows": {
     "130830": {
      "fmt": "70MM ENERGIA",
@@ -564,6 +607,10 @@
      "fmt": "70MM ENERGIA",
      "when": "14/10 21:00"
     },
+    "131149": {
+     "fmt": "FILM IN INGLESE 70MM ENERGIA",
+     "when": "10/10 13:00"
+    },
     "131166": {
      "fmt": "70MM ENERGIA",
      "when": "08/10 21:00"
@@ -583,6 +630,10 @@
     "131172": {
      "fmt": "70MM ENERGIA",
      "when": "12/10 17:00"
+    },
+    "131173": {
+     "fmt": "FILM IN INGLESE 70MM ENERGIA",
+     "when": "13/10 21:00"
     },
     "131174": {
      "fmt": "70MM ENERGIA",
@@ -624,32 +675,6 @@
    },
    "title": "RESIDENT EVIL [2026]",
    "url": "/scheda/resident-evil-2026/48060/3364/"
-  },
-  "the-matrix-1999-reissue-original-version": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/1c48cf5f5092bdb2d4511db1f6259d23b76f9825948c2bccab2db953663f8e0c2efd43222e3a65e96b36aa1a32be8e19769cfc97030847c030adef8c474d39ce.jpg",
-   "shows": {
-    "131004": {
-     "fmt": "ENERGIA ORIGINAL VERSION",
-     "when": "27/10 21:00"
-    }
-   },
-   "title": "THE MATRIX [1999] - REISSUE | ORIGINAL VERSION",
-   "url": "/scheda/the-matrix-1999-reissue-original-version/48719/3364/"
-  },
-  "the-odyssey-2026-original-version": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/7efd1bf999801fe57d7f176c695e11be0d008f8fa45df4e1a7e126c74b9743029fec9749e4ae4fc306860754205442cb7c5b6fbcd3d6eb29d50efadd01192d00.jpg",
-   "shows": {
-    "131149": {
-     "fmt": "70MM ENERGIA ORIGINAL VERSION",
-     "when": "10/10 13:00"
-    },
-    "131173": {
-     "fmt": "70MM ENERGIA ORIGINAL VERSION",
-     "when": "13/10 21:00"
-    }
-   },
-   "title": "THE ODYSSEY [2026] | ORIGINAL VERSION",
-   "url": "/scheda/the-odyssey-2026-original-version/47575/3364/"
   },
   "the-social-il-prezzo-della-verita": {
    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48312.jpg",
