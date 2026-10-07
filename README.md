@@ -1,2 +1,2 @@
 # arcadiamelzobot
-testing cinema bot
+A Bot capable of tracking Arcadia cinema's schedule.
