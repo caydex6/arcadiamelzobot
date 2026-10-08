@@ -2,25 +2,35 @@
 """
 Bot Telegram per Arcadia Cinema.
 
-Controlla la programmazione di uno o più cinema Arcadia e invia una notifica
-su Telegram quando:
-  - compare un film nuovo
-  - viene aggiunto un orario a un film già in programmazione
+Cosa fa
+  - Notifica quando compare un film nuovo o viene aggiunto un orario a un film
+    già in programmazione, per tutti i cinema Arcadia che hai scelto di tracciare.
+  - /track  -> lista di cinema attivabili/disattivabili con un tap (✅ attivo, ❌ no)
+  - /list   -> invia l'intera programmazione dei cinema tracciati (locandine, orari)
 
-Configurazione tramite variabili d'ambiente:
+Come si avvia
+  python bot.py          fa un solo giro e termina (modalità GitHub Actions): legge i
+                         comandi arrivati dall'ultimo giro, controlla i cinema e invia
+                         le notifiche. Il workflow lo lancia ogni pochi minuti, quindi
+                         i comandi ricevono risposta al giro successivo.
+  python bot.py --loop   (facoltativo) resta sempre acceso su un PC/server: risponde
+                         subito ai comandi e controlla i cinema ogni CHECK_MINUTES
+
+Variabili d'ambiente
   TELEGRAM_TOKEN    token del bot (da @BotFather)
-  TELEGRAM_CHAT_ID  id della chat/gruppo/canale che riceve i messaggi
-  CINEMAS           cinema da controllare, separati da virgola
+  TELEGRAM_CHAT_ID  chat autorizzate, separate da virgola (la tua chat e/o un gruppo).
+                    Le altre chat vengono ignorate.
+  CINEMAS           cinema attivi di default per chi non ha ancora usato /track
                     (melzo, bellinzago, erbusco, stezzano). Default: melzo
-  WATCH             (opzionale) parole chiave separate da virgola: se presente,
-                    i NUOVI ORARI vengono notificati solo per i film il cui
-                    titolo contiene una di queste parole. I film nuovi vengono
-                    sempre notificati.
+  CHECK_MINUTES     ogni quanti minuti controllare il sito (solo con --loop). Default: 15
+  WATCH             (opzionale) parole chiave separate da virgola: se presente, i NUOVI
+                    ORARI vengono notificati solo per i film il cui titolo le contiene.
+                    I film nuovi vengono sempre notificati.
   STATE_FILE        file dove salvare lo stato. Default: state.json
   DRY_RUN           se "1" stampa i messaggi invece di inviarli
 
-Alla prima esecuzione per un cinema lo stato viene solo salvato, senza
-notifiche per tutto ciò che è già in programmazione.
+Quando un cinema viene tracciato per la prima volta, la sua programmazione attuale
+viene solo memorizzata: si riceve notifica solo di ciò che cambia da quel momento.
 """
 import html
 import json
@@ -36,12 +46,23 @@ import requests
 from bs4 import BeautifulSoup
 
 BASE = "https://www.arcadiacinema.com"
-CINEMAS = [c.strip() for c in os.environ.get("CINEMAS", "melzo").split(",") if c.strip()]
+CINEMA_NAMES = {
+    "melzo": "Melzo",
+    "bellinzago": "Bellinzago Lombardo",
+    "erbusco": "Erbusco",
+    "stezzano": "Stezzano",
+}
+DEFAULT_CINEMAS = [
+    c.strip() for c in os.environ.get("CINEMAS", "melzo").split(",") if c.strip() in CINEMA_NAMES
+]
 WATCH = [w.strip().lower() for w in os.environ.get("WATCH", "").split(",") if w.strip()]
 TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
-CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
+ALLOWED = {c.strip() for c in os.environ.get("TELEGRAM_CHAT_ID", "").split(",") if c.strip()}
 STATE_FILE = Path(os.environ.get("STATE_FILE", "state.json"))
-DRY_RUN = os.environ.get("DRY_RUN") == "1" or not (TOKEN and CHAT_ID)
+CHECK_EVERY = int(os.environ.get("CHECK_MINUTES", "15")) * 60
+DRY_RUN = os.environ.get("DRY_RUN") == "1" or not (TOKEN and ALLOWED)
+if DRY_RUN and not ALLOWED:
+    ALLOWED = {"anteprima"}
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; arcadia-notifier/1.0; uso personale)",
@@ -58,6 +79,9 @@ POSTER_RE = re.compile(r"/cdn/movies/|img\.cine-vu\.it/locandineSchede")
 SCHEDA_RE = re.compile(r"/scheda/([^/]+)/\d+")
 
 
+# ----------------------------------------------------------------------------
+# Lettura del sito
+# ----------------------------------------------------------------------------
 def fetch(url: str, retries: int = 3) -> str:
     last = None
     for attempt in range(retries):
@@ -127,71 +151,34 @@ def scrape(cinema: str) -> dict:
     return films
 
 
-def send_photo(photo: str, caption: str) -> bool:
-    """Invia la locandina con una didascalia. False se Telegram la rifiuta."""
-    try:
-        r = requests.post(
-            f"https://api.telegram.org/bot{TOKEN}/sendPhoto",
-            json={"chat_id": CHAT_ID, "photo": photo, "caption": caption, "parse_mode": "HTML"},
-            timeout=30,
-        )
-    except requests.RequestException as e:
-        print(f"Errore invio locandina: {e}", file=sys.stderr)
-        return False
-    if not r.ok:
-        print(f"Locandina rifiutata da Telegram ({r.status_code}): {r.text}", file=sys.stderr)
-        return False
-    time.sleep(1)
-    return True
-
-
-def send_text(text: str) -> None:
-    for chunk in split_message(text):
-        r = requests.post(
-            f"https://api.telegram.org/bot{TOKEN}/sendMessage",
-            json={
-                "chat_id": CHAT_ID,
-                "text": chunk,
-                "parse_mode": "HTML",
-                "disable_web_page_preview": True,
-            },
-            timeout=30,
-        )
+# ----------------------------------------------------------------------------
+# Telegram
+# ----------------------------------------------------------------------------
+def tg(method, payload=None, timeout=30):
+    """Chiama l'API di Telegram. Ritorna il risultato, oppure None se fallisce."""
+    for _ in range(2):
+        try:
+            r = requests.post(
+                f"https://api.telegram.org/bot{TOKEN}/{method}", json=payload or {}, timeout=timeout
+            )
+        except requests.RequestException as e:
+            print(f"Errore Telegram ({method}): {e}", file=sys.stderr)
+            return None
+        if r.status_code == 429:  # troppi messaggi: Telegram dice quanto aspettare
+            try:
+                wait = int(r.json()["parameters"]["retry_after"])
+            except Exception:  # noqa: BLE001
+                wait = 5
+            time.sleep(wait + 1)
+            continue
         if not r.ok:
-            print(f"Errore Telegram {r.status_code}: {r.text}", file=sys.stderr)
-        time.sleep(1)
-
-
-def send(header: str, body: str = "", photo: str = "") -> None:
-    """Invia una notifica.
-
-    - con locandina: se intestazione + orari stanno nella didascalia (max 1024
-      caratteri) parte un solo messaggio; altrimenti la locandina porta solo
-      l'intestazione e gli orari seguono in un secondo messaggio (senza
-      ripetere l'intestazione).
-    - senza locandina (o se Telegram la rifiuta): un messaggio di testo completo.
-    """
-    full = f"{header}\n\n{body}" if body else header
-    if DRY_RUN:
-        print("--- MESSAGGIO (dry run) ---")
-        if photo:
-            print(f"[locandina: {photo}]")
-        if photo and len(full) > 1000:
-            print(re.sub(r"<[^>]+>", "", html.unescape(header)))
-            print("--- secondo messaggio ---")
-            print(re.sub(r"<[^>]+>", "", html.unescape(body)))
-        else:
-            print(re.sub(r"<[^>]+>", "", html.unescape(full)))
-        return
-    if photo:
-        if len(full) <= 1000:
-            if send_photo(photo, full):
-                return
-        elif send_photo(photo, header):
-            if body:
-                send_text(body)
-            return
-    send_text(full)
+            print(f"Errore Telegram {method} {r.status_code}: {r.text}", file=sys.stderr)
+            return None
+        try:
+            return r.json().get("result", True)
+        except ValueError:
+            return True
+    return None
 
 
 def split_message(text: str, limit: int = 4000):
@@ -205,12 +192,68 @@ def split_message(text: str, limit: int = 4000):
         yield buf
 
 
+def send_photo(chat: str, photo: str, caption: str) -> bool:
+    ok = tg("sendPhoto", {"chat_id": chat, "photo": photo, "caption": caption, "parse_mode": "HTML"})
+    if ok is None:
+        print("Locandina non inviata, uso il solo testo", file=sys.stderr)
+        return False
+    time.sleep(1)
+    return True
+
+
+def send_text(chat: str, text: str) -> None:
+    for chunk in split_message(text):
+        tg(
+            "sendMessage",
+            {"chat_id": chat, "text": chunk, "parse_mode": "HTML", "disable_web_page_preview": True},
+        )
+        time.sleep(1)
+
+
+def plain(text: str) -> str:
+    return re.sub(r"<[^>]+>", "", html.unescape(text))
+
+
+def send(chat: str, header: str, body: str = "", photo: str = "") -> None:
+    """Invia una notifica.
+
+    - con locandina: se intestazione + orari stanno nella didascalia (max 1024
+      caratteri) parte un solo messaggio; altrimenti la locandina porta solo
+      l'intestazione e gli orari seguono in un secondo messaggio.
+    - senza locandina (o se Telegram la rifiuta): un messaggio di testo completo.
+    """
+    full = f"{header}\n\n{body}" if body else header
+    if DRY_RUN:
+        print(f"--- MESSAGGIO per {chat} (dry run) ---")
+        if photo:
+            print(f"[locandina: {photo}]")
+        if photo and len(full) > 1000:
+            print(plain(header))
+            print("--- secondo messaggio ---")
+            print(plain(body))
+        else:
+            print(plain(full))
+        return
+    if photo:
+        if len(full) <= 1000:
+            if send_photo(chat, photo, full):
+                return
+        elif send_photo(chat, photo, header):
+            if body:
+                send_text(chat, body)
+            return
+    send_text(chat, full)
+
+
+# ----------------------------------------------------------------------------
+# Formattazione
+# ----------------------------------------------------------------------------
 GIORNI = ["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato", "Domenica"]
 
 
 def to_date(day: str) -> date:
     """'19/12' -> data completa. L'anno non è sul sito: si sceglie quello che
-    porta la data più vicina a oggi (da 30 giorni fa a circa 11 mesi avanti)."""
+    porta la data più vicina a oggi (da 120 giorni fa a circa 8 mesi avanti)."""
     d, m = map(int, day.split("/"))
     today = date.today()
     for year in (today.year, today.year + 1, today.year - 1):
@@ -218,9 +261,13 @@ def to_date(day: str) -> date:
             cand = date(year, m, d)
         except ValueError:
             continue
-        if -30 <= (cand - today).days <= 335:
+        if -120 <= (cand - today).days <= 245:
             return cand
     return date(today.year, m, d)
+
+
+def esc(s: str) -> str:
+    return html.escape(s, quote=False)
 
 
 def format_shows(shows: dict) -> str:
@@ -243,64 +290,284 @@ def format_shows(shows: dict) -> str:
     return "\n\n".join(blocks)
 
 
-def esc(s: str) -> str:
-    return html.escape(s, quote=False)
+def scheda_link(film: dict) -> str:
+    return f'<a href="{html.escape(film["url"])}">SCHEDA FILM</a>'
 
 
+# ----------------------------------------------------------------------------
+# Stato (cinema memorizzati, scelte di ogni chat, posizione negli aggiornamenti)
+# ----------------------------------------------------------------------------
+def load_state() -> dict:
+    state = json.loads(STATE_FILE.read_text()) if STATE_FILE.exists() else {}
+    if "cinemas" not in state:  # vecchio formato: {cinema: {film...}}
+        state = {"cinemas": {k: v for k, v in state.items() if k in CINEMA_NAMES}}
+    state.setdefault("chats", {})
+    state.setdefault("offset", 0)
+    return state
+
+
+def save_state(state: dict) -> None:
+    STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=1, sort_keys=True))
+
+
+def tracked(state: dict, chat: str) -> list:
+    """Cinema tracciati da una chat (se non ha mai usato /track: quelli di default)."""
+    chosen = state["chats"].get(chat, DEFAULT_CINEMAS)
+    return [c for c in CINEMA_NAMES if c in chosen]
+
+
+# ----------------------------------------------------------------------------
+# Controllo periodico e notifiche
+# ----------------------------------------------------------------------------
 def watched(title: str) -> bool:
     return not WATCH or any(w in title.lower() for w in WATCH)
 
 
-def diff_and_notify(cinema: str, old: dict, new: dict) -> None:
-    name = cinema.capitalize()
+def diff_and_notify(cinema: str, old: dict, new: dict, chats: list) -> None:
+    name = CINEMA_NAMES[cinema]
     for slug, film in new.items():
-        link = f'<a href="{html.escape(film["url"])}">SCHEDA FILM</a>'
         title = esc(film["title"])
+        link = scheda_link(film)
         if slug not in old:
-            send(
-                f"🎬 <b>Nuovo film a {name}</b>\n<b>{title}</b>",
-                f"{format_shows(film['shows'])}\n\n{link}",
-                film.get("poster", ""),
-            )
-            continue
-        added = {i: s for i, s in film["shows"].items() if i not in old[slug]["shows"]}
-        if added and watched(film["title"]):
-            send(
-                f"🕒 <b>Nuovi orari a {name}</b>\n<b>{title}</b>",
-                f"{format_shows(added)}\n\n{link}",
-                film.get("poster", ""),
-            )
+            header = f"🎬 <b>Nuovo film a {name}</b>\n<b>{title}</b>"
+            body = f"{format_shows(film['shows'])}\n\n{link}"
+        else:
+            added = {i: s for i, s in film["shows"].items() if i not in old[slug]["shows"]}
+            if not added or not watched(film["title"]):
+                continue
+            header = f"🕒 <b>Nuovi orari a {name}</b>\n<b>{title}</b>"
+            body = f"{format_shows(added)}\n\n{link}"
+        for chat in chats:
+            send(chat, header, body, film.get("poster", ""))
 
 
-def main() -> int:
-    state = json.loads(STATE_FILE.read_text()) if STATE_FILE.exists() else {}
+def check_all(state: dict) -> tuple:
+    """Controlla i cinema tracciati da almeno una chat. Ritorna (errori, cinema controllati)."""
+    wanted = {c for chat in ALLOWED for c in tracked(state, chat)}
     errors = 0
-
-    for cinema in CINEMAS:
+    for cinema in sorted(wanted):
+        chats = [c for c in sorted(ALLOWED) if cinema in tracked(state, c)]
         try:
             new = scrape(cinema)
         except Exception as e:  # noqa: BLE001
             print(f"[{cinema}] errore: {e}", file=sys.stderr)
             errors += 1
             continue
-
         if not new:
             # pagina vuota o struttura cambiata: non toccare lo stato
             print(f"[{cinema}] nessun film trovato, stato non aggiornato", file=sys.stderr)
             errors += 1
             continue
 
-        if cinema not in state:
+        old = state["cinemas"].get(cinema)
+        if old is None:
             print(f"[{cinema}] primo avvio: salvati {len(new)} film, nessuna notifica")
-            send(f"✅ Bot attivo per Arcadia {cinema.capitalize()}: {len(new)} film in programmazione.")
+            for chat in chats:
+                send(chat, f"✅ Tracciamento attivo per Arcadia {CINEMA_NAMES[cinema]}: "
+                           f"{len(new)} film in programmazione.")
         else:
-            diff_and_notify(cinema, state[cinema], new)
+            diff_and_notify(cinema, old, new, chats)
+        state["cinemas"][cinema] = new
 
-        state[cinema] = new
+    # un cinema che nessuno traccia più non va tenuto: se verrà riattivato
+    # si ripartirà da zero, senza una valanga di "nuovi film"
+    for cinema in list(state["cinemas"]):
+        if cinema not in wanted:
+            del state["cinemas"][cinema]
+    return errors, len(wanted)
 
-    STATE_FILE.write_text(json.dumps(state, ensure_ascii=False, indent=1, sort_keys=True))
-    return 1 if errors == len(CINEMAS) else 0
+
+# ----------------------------------------------------------------------------
+# Comandi
+# ----------------------------------------------------------------------------
+HELP = (
+    "👋 <b>Bot Arcadia Cinema</b>\n\n"
+    "/list - tutta la programmazione dei cinema che tracci\n"
+    "/track - scegli quali cinema tracciare\n\n"
+    "Ti avviso quando esce un film nuovo o viene aggiunto un orario."
+)
+
+
+def track_keyboard(state: dict, chat: str) -> dict:
+    on = tracked(state, chat)
+    rows = [
+        [{"text": f"{'✅' if c in on else '❌'} {name}", "callback_data": f"s:{c}:{0 if c in on else 1}"}]
+        for c, name in CINEMA_NAMES.items()
+    ]
+    return {"inline_keyboard": rows}
+
+
+def cmd_track(state: dict, chat: str) -> None:
+    tg(
+        "sendMessage",
+        {
+            "chat_id": chat,
+            "text": "🎟 <b>Cinema da tracciare</b>\nTocca un cinema per attivarlo (✅) o disattivarlo (❌).",
+            "parse_mode": "HTML",
+            "reply_markup": track_keyboard(state, chat),
+        },
+    )
+
+
+def cmd_list(state: dict, chat: str) -> None:
+    cinemas = tracked(state, chat)
+    if not cinemas:
+        send_text(chat, "Non stai tracciando nessun cinema. Usa /track per sceglierli.")
+        return
+    for cinema in cinemas:
+        name = CINEMA_NAMES[cinema]
+        try:
+            films = scrape(cinema)
+        except Exception as e:  # noqa: BLE001
+            print(f"[{cinema}] errore: {e}", file=sys.stderr)
+            films = None
+        if not films:
+            send_text(chat, f"⚠️ Non riesco a leggere la programmazione di {name} in questo momento.")
+            continue
+        send_text(chat, f"🎞 <b>Programmazione Arcadia {name}</b>\n{len(films)} film")
+        for film in films.values():
+            send(
+                chat,
+                f"🎬 <b>{esc(film['title'])}</b>\n📍 {name}",
+                f"{format_shows(film['shows'])}\n\n{scheda_link(film)}",
+                film.get("poster", ""),
+            )
+
+
+def on_set(state: dict, query: dict, chat: str, cinema: str, want: bool) -> None:
+    """Imposta un cinema su attivo/disattivo. Il tasto indica lo stato voluto (non
+    'inverti'), così un doppio tap o una risposta in ritardo non lo fanno rimbalzare."""
+    if cinema not in CINEMA_NAMES:
+        tg("answerCallbackQuery", {"callback_query_id": query["id"]})
+        return
+    on = tracked(state, chat)
+    if want and cinema not in on:
+        on.append(cinema)
+    elif not want and cinema in on:
+        on.remove(cinema)
+    note = f"{CINEMA_NAMES[cinema]} {'attivato' if want else 'disattivato'}"
+    state["chats"][chat] = [c for c in CINEMA_NAMES if c in on]
+    save_state(state)
+
+    tg("answerCallbackQuery", {"callback_query_id": query["id"], "text": note})
+    tg(
+        "editMessageReplyMarkup",
+        {
+            "chat_id": chat,
+            "message_id": query["message"]["message_id"],
+            "reply_markup": track_keyboard(state, chat),
+        },
+    )
+
+    # cinema appena attivato: si memorizza subito la programmazione attuale,
+    # così da ricevere solo le novità da questo momento
+    if cinema in on and cinema not in state["cinemas"]:
+        try:
+            films = scrape(cinema)
+            if films:
+                state["cinemas"][cinema] = films
+                save_state(state)
+        except Exception as e:  # noqa: BLE001
+            print(f"[{cinema}] errore: {e}", file=sys.stderr)  # lo farà il prossimo controllo
+
+
+def handle_update(state: dict, update: dict) -> None:
+    if "message" in update:
+        msg = update["message"]
+        chat = str(msg["chat"]["id"])
+        text = (msg.get("text") or "").strip()
+        if chat not in ALLOWED:
+            print(f"Messaggio ignorato da chat non autorizzata {chat}", file=sys.stderr)
+            return
+        if not text.startswith("/"):
+            return
+        cmd = text.split()[0].split("@")[0].lower()
+        if cmd == "/list":
+            cmd_list(state, chat)
+        elif cmd == "/track":
+            cmd_track(state, chat)
+        elif cmd in ("/start", "/help"):
+            send_text(chat, HELP)
+    elif "callback_query" in update:
+        query = update["callback_query"]
+        message = query.get("message")
+        if not message:
+            return
+        chat = str(message["chat"]["id"])
+        data = query.get("data", "")
+        parts = data.split(":")
+        if chat in ALLOWED and len(parts) == 3 and parts[0] == "s":
+            on_set(state, query, chat, parts[1], parts[2] == "1")
+
+
+def process_updates(state: dict, timeout: int = 0) -> bool:
+    """Gestisce i comandi arrivati. Con timeout > 0 resta in attesa (long polling).
+    Ritorna False se Telegram non è raggiungibile."""
+    updates = tg(
+        "getUpdates",
+        {"offset": state["offset"], "timeout": timeout, "allowed_updates": ["message", "callback_query"]},
+        timeout=timeout + 15,
+    )
+    if updates is None:
+        return False
+    for update in updates:
+        state["offset"] = update["update_id"] + 1
+        save_state(state)  # prima di gestirlo, così un errore non lo fa ripetere
+        try:
+            handle_update(state, update)
+        except Exception as e:  # noqa: BLE001
+            print(f"Errore nel gestire l'aggiornamento: {e}", file=sys.stderr)
+    return True
+
+
+def set_commands() -> None:
+    tg(
+        "setMyCommands",
+        {
+            "commands": [
+                {"command": "list", "description": "Tutta la programmazione dei cinema tracciati"},
+                {"command": "track", "description": "Scegli i cinema da tracciare"},
+            ]
+        },
+    )
+
+
+# ----------------------------------------------------------------------------
+# Avvio
+# ----------------------------------------------------------------------------
+def run_once() -> int:
+    state = load_state()
+    if not DRY_RUN:
+        set_commands()
+        process_updates(state, 0)
+    errors, total = check_all(state)
+    save_state(state)
+    return 1 if total and errors == total else 0
+
+
+def run_loop() -> int:
+    if DRY_RUN:
+        print("Con --loop servono TELEGRAM_TOKEN e TELEGRAM_CHAT_ID.", file=sys.stderr)
+        return 1
+    state = load_state()
+    set_commands()
+    print("Bot avviato. Premi Ctrl+C per fermarlo.")
+    last_check = 0.0
+    while True:
+        try:
+            if not process_updates(state, 30):
+                time.sleep(10)
+            if time.time() - last_check >= CHECK_EVERY:
+                check_all(state)
+                save_state(state)
+                last_check = time.time()
+        except KeyboardInterrupt:
+            print("Bot fermato.")
+            return 0
+        except Exception as e:  # noqa: BLE001
+            print(f"Errore inatteso: {e}", file=sys.stderr)
+            time.sleep(10)
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(run_loop() if "--loop" in sys.argv else run_once())
