@@ -1,701 +1,705 @@
 {
- "melzo": {
-  "avengers-doomsday": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/c9e78d4fdbcc781a173ad231fc128c26b261ea8e6b6c2b19ee6940a1acf6fb7fb68755bb19bef93a6556084e56478cb86739411a3cb1c4f86d999bf49da5104d.jpg",
-   "shows": {
-    "131181": {
-     "fmt": "ENERGIA INFINITY VISION",
-     "when": "15/12 00:01"
+ "chats": {},
+ "cinemas": {
+  "melzo": {
+   "avengers-doomsday": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/c9e78d4fdbcc781a173ad231fc128c26b261ea8e6b6c2b19ee6940a1acf6fb7fb68755bb19bef93a6556084e56478cb86739411a3cb1c4f86d999bf49da5104d.jpg",
+    "shows": {
+     "131181": {
+      "fmt": "ENERGIA INFINITY VISION",
+      "when": "15/12 00:01"
+     },
+     "131182": {
+      "fmt": "ENERGIA INFINITY VISION",
+      "when": "16/12 13:00"
+     },
+     "131183": {
+      "fmt": "ENERGIA INFINITY VISION",
+      "when": "17/12 17:00"
+     },
+     "131184": {
+      "fmt": "ENERGIA INFINITY VISION",
+      "when": "18/12 21:00"
+     },
+     "131185": {
+      "fmt": "FILM IN INGLESE INFINITY VISION ENERGIA",
+      "when": "19/12 09:00"
+     },
+     "131186": {
+      "fmt": "ENERGIA INFINITY VISION",
+      "when": "20/12 13:00"
+     },
+     "131187": {
+      "fmt": "INFINITY VISION",
+      "when": "15/12 00:01"
+     },
+     "131188": {
+      "fmt": "FILM IN INGLESE INFINITY VISION",
+      "when": "15/12 00:01"
+     },
+     "131189": {
+      "fmt": "INFINITY VISION",
+      "when": "16/12 09:30"
+     },
+     "131190": {
+      "fmt": "FILM IN INGLESE INFINITY VISION",
+      "when": "16/12 19:30"
+     },
+     "131191": {
+      "fmt": "INFINITY VISION",
+      "when": "16/12 11:30"
+     },
+     "131192": {
+      "fmt": "INFINITY VISION",
+      "when": "16/12 17:30"
+     },
+     "131193": {
+      "fmt": "INFINITY VISION",
+      "when": "15/12 00:01"
+     },
+     "131194": {
+      "fmt": "INFINITY VISION",
+      "when": "15/12 00:01"
+     },
+     "131195": {
+      "fmt": "INFINITY VISION",
+      "when": "16/12 10:30"
+     },
+     "131196": {
+      "fmt": "ENERGIA INFINITY VISION",
+      "when": "18/12 13:00"
+     },
+     "131197": {
+      "fmt": "ENERGIA INFINITY VISION",
+      "when": "19/12 01:00"
+     },
+     "131198": {
+      "fmt": "INFINITY VISION",
+      "when": "16/12 12:30"
+     },
+     "131199": {
+      "fmt": "INFINITY VISION",
+      "when": "16/12 20:30"
+     },
+     "131200": {
+      "fmt": "INFINITY VISION",
+      "when": "16/12 18:30"
+     },
+     "131221": {
+      "fmt": "INFINITY VISION",
+      "when": "17/12 21:30"
+     },
+     "131224": {
+      "fmt": "INFINITY VISION",
+      "when": "17/12 23:30"
+     },
+     "131225": {
+      "fmt": "INFINITY VISION",
+      "when": "17/12 13:30"
+     },
+     "131226": {
+      "fmt": "INFINITY VISION",
+      "when": "17/12 15:30"
+     },
+     "131227": {
+      "fmt": "INFINITY VISION",
+      "when": "18/12 09:30"
+     },
+     "131228": {
+      "fmt": "INFINITY VISION",
+      "when": "18/12 17:30"
+     },
+     "131229": {
+      "fmt": "INFINITY VISION",
+      "when": "18/12 11:30"
+     },
+     "131230": {
+      "fmt": "INFINITY VISION",
+      "when": "18/12 20:30"
+     },
+     "131231": {
+      "fmt": "INFINITY VISION",
+      "when": "19/12 13:30"
+     },
+     "131232": {
+      "fmt": "INFINITY VISION",
+      "when": "19/12 21:30"
+     },
+     "131233": {
+      "fmt": "INFINITY VISION",
+      "when": "19/12 10:30"
+     },
+     "131234": {
+      "fmt": "INFINITY VISION",
+      "when": "19/12 14:30"
+     },
+     "131235": {
+      "fmt": "INFINITY VISION",
+      "when": "19/12 22:30"
+     },
+     "131236": {
+      "fmt": "INFINITY VISION",
+      "when": "19/12 15:30"
+     },
+     "131237": {
+      "fmt": "INFINITY VISION",
+      "when": "19/12 23:30"
+     },
+     "131238": {
+      "fmt": "INFINITY VISION",
+      "when": "19/12 16:30"
+     },
+     "131341": {
+      "fmt": "ENERGIA INFINITY VISION",
+      "when": "20/12 09:00"
+     },
+     "131342": {
+      "fmt": "ENERGIA INFINITY VISION",
+      "when": "21/12 13:00"
+     },
+     "131343": {
+      "fmt": "ENERGIA INFINITY VISION",
+      "when": "21/12 21:00"
+     },
+     "131344": {
+      "fmt": "ENERGIA INFINITY VISION",
+      "when": "22/12 09:00"
+     },
+     "131345": {
+      "fmt": "ENERGIA INFINITY VISION",
+      "when": "22/12 17:00"
+     },
+     "131346": {
+      "fmt": "ENERGIA INFINITY VISION",
+      "when": "23/12 13:00"
+     },
+     "131347": {
+      "fmt": "ENERGIA INFINITY VISION",
+      "when": "23/12 21:00"
+     },
+     "131348": {
+      "fmt": "INFINITY VISION",
+      "when": "20/12 17:30"
+     },
+     "131349": {
+      "fmt": "INFINITY VISION",
+      "when": "20/12 21:30"
+     },
+     "131350": {
+      "fmt": "INFINITY VISION",
+      "when": "20/12 20:30"
+     },
+     "131351": {
+      "fmt": "INFINITY VISION",
+      "when": "21/12 09:30"
+     },
+     "131352": {
+      "fmt": "INFINITY VISION",
+      "when": "21/12 17:30"
+     },
+     "131353": {
+      "fmt": "INFINITY VISION",
+      "when": "22/12 13:30"
+     },
+     "131354": {
+      "fmt": "INFINITY VISION",
+      "when": "22/12 21:30"
+     },
+     "131355": {
+      "fmt": "INFINITY VISION",
+      "when": "23/12 09:30"
+     },
+     "131356": {
+      "fmt": "INFINITY VISION",
+      "when": "23/12 17:30"
+     }
     },
-    "131182": {
-     "fmt": "ENERGIA INFINITY VISION",
-     "when": "16/12 13:00"
-    },
-    "131183": {
-     "fmt": "ENERGIA INFINITY VISION",
-     "when": "17/12 17:00"
-    },
-    "131184": {
-     "fmt": "ENERGIA INFINITY VISION",
-     "when": "18/12 21:00"
-    },
-    "131185": {
-     "fmt": "FILM IN INGLESE INFINITY VISION ENERGIA",
-     "when": "19/12 09:00"
-    },
-    "131186": {
-     "fmt": "ENERGIA INFINITY VISION",
-     "when": "20/12 13:00"
-    },
-    "131187": {
-     "fmt": "INFINITY VISION",
-     "when": "15/12 00:01"
-    },
-    "131188": {
-     "fmt": "FILM IN INGLESE INFINITY VISION",
-     "when": "15/12 00:01"
-    },
-    "131189": {
-     "fmt": "INFINITY VISION",
-     "when": "16/12 09:30"
-    },
-    "131190": {
-     "fmt": "FILM IN INGLESE INFINITY VISION",
-     "when": "16/12 19:30"
-    },
-    "131191": {
-     "fmt": "INFINITY VISION",
-     "when": "16/12 11:30"
-    },
-    "131192": {
-     "fmt": "INFINITY VISION",
-     "when": "16/12 17:30"
-    },
-    "131193": {
-     "fmt": "INFINITY VISION",
-     "when": "15/12 00:01"
-    },
-    "131194": {
-     "fmt": "INFINITY VISION",
-     "when": "15/12 00:01"
-    },
-    "131195": {
-     "fmt": "INFINITY VISION",
-     "when": "16/12 10:30"
-    },
-    "131196": {
-     "fmt": "ENERGIA INFINITY VISION",
-     "when": "18/12 13:00"
-    },
-    "131197": {
-     "fmt": "ENERGIA INFINITY VISION",
-     "when": "19/12 01:00"
-    },
-    "131198": {
-     "fmt": "INFINITY VISION",
-     "when": "16/12 12:30"
-    },
-    "131199": {
-     "fmt": "INFINITY VISION",
-     "when": "16/12 20:30"
-    },
-    "131200": {
-     "fmt": "INFINITY VISION",
-     "when": "16/12 18:30"
-    },
-    "131221": {
-     "fmt": "INFINITY VISION",
-     "when": "17/12 21:30"
-    },
-    "131224": {
-     "fmt": "INFINITY VISION",
-     "when": "17/12 23:30"
-    },
-    "131225": {
-     "fmt": "INFINITY VISION",
-     "when": "17/12 13:30"
-    },
-    "131226": {
-     "fmt": "INFINITY VISION",
-     "when": "17/12 15:30"
-    },
-    "131227": {
-     "fmt": "INFINITY VISION",
-     "when": "18/12 09:30"
-    },
-    "131228": {
-     "fmt": "INFINITY VISION",
-     "when": "18/12 17:30"
-    },
-    "131229": {
-     "fmt": "INFINITY VISION",
-     "when": "18/12 11:30"
-    },
-    "131230": {
-     "fmt": "INFINITY VISION",
-     "when": "18/12 20:30"
-    },
-    "131231": {
-     "fmt": "INFINITY VISION",
-     "when": "19/12 13:30"
-    },
-    "131232": {
-     "fmt": "INFINITY VISION",
-     "when": "19/12 21:30"
-    },
-    "131233": {
-     "fmt": "INFINITY VISION",
-     "when": "19/12 10:30"
-    },
-    "131234": {
-     "fmt": "INFINITY VISION",
-     "when": "19/12 14:30"
-    },
-    "131235": {
-     "fmt": "INFINITY VISION",
-     "when": "19/12 22:30"
-    },
-    "131236": {
-     "fmt": "INFINITY VISION",
-     "when": "19/12 15:30"
-    },
-    "131237": {
-     "fmt": "INFINITY VISION",
-     "when": "19/12 23:30"
-    },
-    "131238": {
-     "fmt": "INFINITY VISION",
-     "when": "19/12 16:30"
-    },
-    "131341": {
-     "fmt": "ENERGIA INFINITY VISION",
-     "when": "20/12 09:00"
-    },
-    "131342": {
-     "fmt": "ENERGIA INFINITY VISION",
-     "when": "21/12 13:00"
-    },
-    "131343": {
-     "fmt": "ENERGIA INFINITY VISION",
-     "when": "21/12 21:00"
-    },
-    "131344": {
-     "fmt": "ENERGIA INFINITY VISION",
-     "when": "22/12 09:00"
-    },
-    "131345": {
-     "fmt": "ENERGIA INFINITY VISION",
-     "when": "22/12 17:00"
-    },
-    "131346": {
-     "fmt": "ENERGIA INFINITY VISION",
-     "when": "23/12 13:00"
-    },
-    "131347": {
-     "fmt": "ENERGIA INFINITY VISION",
-     "when": "23/12 21:00"
-    },
-    "131348": {
-     "fmt": "INFINITY VISION",
-     "when": "20/12 17:30"
-    },
-    "131349": {
-     "fmt": "INFINITY VISION",
-     "when": "20/12 21:30"
-    },
-    "131350": {
-     "fmt": "INFINITY VISION",
-     "when": "20/12 20:30"
-    },
-    "131351": {
-     "fmt": "INFINITY VISION",
-     "when": "21/12 09:30"
-    },
-    "131352": {
-     "fmt": "INFINITY VISION",
-     "when": "21/12 17:30"
-    },
-    "131353": {
-     "fmt": "INFINITY VISION",
-     "when": "22/12 13:30"
-    },
-    "131354": {
-     "fmt": "INFINITY VISION",
-     "when": "22/12 21:30"
-    },
-    "131355": {
-     "fmt": "INFINITY VISION",
-     "when": "23/12 09:30"
-    },
-    "131356": {
-     "fmt": "INFINITY VISION",
-     "when": "23/12 17:30"
-    }
+    "title": "AVENGERS - DOOMSDAY",
+    "url": "https://www.arcadiacinema.com/scheda/avengers-doomsday/48784/"
    },
-   "title": "AVENGERS - DOOMSDAY",
-   "url": "https://www.arcadiacinema.com/scheda/avengers-doomsday/48784/"
-  },
-  "avengers-endgame-extra": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/b182d1beda5de63f258d7957c611853ed8aa343553d2bce273d66507f6781cabd31e4aa0463b22a71e02fb668dee431f3cfb0bc40f77432fa4de24299113f995.jpg",
-   "shows": {
-    "131287": {
-     "fmt": "2D",
-     "when": "11/10 17:20"
+   "avengers-endgame-extra": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/b182d1beda5de63f258d7957c611853ed8aa343553d2bce273d66507f6781cabd31e4aa0463b22a71e02fb668dee431f3cfb0bc40f77432fa4de24299113f995.jpg",
+    "shows": {
+     "131287": {
+      "fmt": "2D",
+      "when": "11/10 17:20"
+     },
+     "131296": {
+      "fmt": "2D",
+      "when": "10/10 14:40"
+     }
     },
-    "131296": {
-     "fmt": "2D",
-     "when": "10/10 14:40"
-    }
+    "title": "AVENGERS: ENDGAME EXTRA",
+    "url": "/scheda/avengers-endgame-extra/48525/3364/"
    },
-   "title": "AVENGERS: ENDGAME EXTRA",
-   "url": "/scheda/avengers-endgame-extra/48525/3364/"
-  },
-  "digger-2026": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/eec4df2672c82ce0bbacb6c95f549be5a8c53aebc5a4c8c160fe732c6c69776f972f2a1af4593b9f30b4cd5bee0c9fd3e6bae69eaa2ff31aeb9c98a537871b1c.jpg",
-   "shows": {
-    "131282": {
-     "fmt": "2D",
-     "when": "08/10 20:50"
+   "digger-2026": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/eec4df2672c82ce0bbacb6c95f549be5a8c53aebc5a4c8c160fe732c6c69776f972f2a1af4593b9f30b4cd5bee0c9fd3e6bae69eaa2ff31aeb9c98a537871b1c.jpg",
+    "shows": {
+     "131282": {
+      "fmt": "2D",
+      "when": "08/10 20:50"
+     },
+     "131284": {
+      "fmt": "2D",
+      "when": "09/10 22:15"
+     },
+     "131286": {
+      "fmt": "2D",
+      "when": "10/10 18:10"
+     },
+     "131288": {
+      "fmt": "2D",
+      "when": "11/10 20:50"
+     },
+     "131292": {
+      "fmt": "2D",
+      "when": "13/10 20:50"
+     },
+     "131294": {
+      "fmt": "2D",
+      "when": "14/10 17:20"
+     },
+     "131298": {
+      "fmt": "FILM IN INGLESE",
+      "when": "11/10 11:00"
+     },
+     "131299": {
+      "fmt": "2D",
+      "when": "12/10 17:20"
+     }
     },
-    "131284": {
-     "fmt": "2D",
-     "when": "09/10 22:15"
-    },
-    "131286": {
-     "fmt": "2D",
-     "when": "10/10 18:10"
-    },
-    "131288": {
-     "fmt": "2D",
-     "when": "11/10 20:50"
-    },
-    "131292": {
-     "fmt": "2D",
-     "when": "13/10 20:50"
-    },
-    "131294": {
-     "fmt": "2D",
-     "when": "14/10 17:20"
-    },
-    "131298": {
-     "fmt": "FILM IN INGLESE",
-     "when": "11/10 11:00"
-    },
-    "131299": {
-     "fmt": "2D",
-     "when": "12/10 17:20"
-    }
+    "title": "DIGGER [2026]",
+    "url": "https://arcadiacinema.com/scheda/digger-2026/48062/"
    },
-   "title": "DIGGER [2026]",
-   "url": "https://arcadiacinema.com/scheda/digger-2026/48062/"
-  },
-  "dune-parte-tre": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/a0d30d29ccbdb1ecd67c31e8b6bd1863976ccf60df5664f7667f6a2044e86bbbffe72fb3257b5fcde1d0501e07cce6dc8a8e7125619173af9e9bf85740b535b2.jpg",
-   "shows": {
-    "130783": {
-     "fmt": "70MM ENERGIA",
-     "when": "15/12 20:00"
-    }
+   "dune-parte-tre": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/a0d30d29ccbdb1ecd67c31e8b6bd1863976ccf60df5664f7667f6a2044e86bbbffe72fb3257b5fcde1d0501e07cce6dc8a8e7125619173af9e9bf85740b535b2.jpg",
+    "shows": {
+     "130783": {
+      "fmt": "70MM ENERGIA",
+      "when": "15/12 20:00"
+     }
+    },
+    "title": "DUNE PARTE TRE",
+    "url": "https://arcadiacinema.com/scheda/dune-parte-tre/48067/"
    },
-   "title": "DUNE PARTE TRE",
-   "url": "https://arcadiacinema.com/scheda/dune-parte-tre/48067/"
-  },
-  "heart-of-the-beast-nel-profondo-selvaggio": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/40f1fd35dfdd397f6f600f01d2dcda4941633ffac90fb7bacf0f81a1f3b70a349103842160b654b4af273baecd7518482540d32d2eecc526e8241017c2efb969.jpg",
-   "shows": {
-    "131290": {
-     "fmt": "2D",
-     "when": "12/10 20:40"
+   "heart-of-the-beast-nel-profondo-selvaggio": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/40f1fd35dfdd397f6f600f01d2dcda4941633ffac90fb7bacf0f81a1f3b70a349103842160b654b4af273baecd7518482540d32d2eecc526e8241017c2efb969.jpg",
+    "shows": {
+     "131290": {
+      "fmt": "2D",
+      "when": "12/10 20:40"
+     },
+     "131295": {
+      "fmt": "2D",
+      "when": "09/10 17:20"
+     },
+     "131316": {
+      "fmt": "2D",
+      "when": "10/10 15:30"
+     }
     },
-    "131295": {
-     "fmt": "2D",
-     "when": "09/10 17:20"
-    },
-    "131316": {
-     "fmt": "2D",
-     "when": "10/10 15:30"
-    }
+    "title": "HEART OF THE BEAST - NEL PROFONDO SELVAGGIO",
+    "url": "/scheda/heart-of-the-beast-nel-profondo-selvaggio/48311/3364/"
    },
-   "title": "HEART OF THE BEAST - NEL PROFONDO SELVAGGIO",
-   "url": "/scheda/heart-of-the-beast-nel-profondo-selvaggio/48311/3364/"
-  },
-  "il-dottor-stranamore-ovvero-come-imparai-a-non-preoccuparmi-e-ad-amare-la-bomba": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/2f1804b7d415eaca16fc6f0c8acc694ceeb23d419d4a025f90b70288ade4a2b3e20094a1af4deb0ec47d38388727cc9ced15d25e5d7c12b838fa32c715143584.jpg",
-   "shows": {
-    "131014": {
-     "fmt": "4K",
-     "when": "12/10 20:45"
+   "il-dottor-stranamore-ovvero-come-imparai-a-non-preoccuparmi-e-ad-amare-la-bomba": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/2f1804b7d415eaca16fc6f0c8acc694ceeb23d419d4a025f90b70288ade4a2b3e20094a1af4deb0ec47d38388727cc9ced15d25e5d7c12b838fa32c715143584.jpg",
+    "shows": {
+     "131014": {
+      "fmt": "4K",
+      "when": "12/10 20:45"
+     },
+     "131015": {
+      "fmt": "FILM IN INGLESE 4K",
+      "when": "13/10 20:45"
+     }
     },
-    "131015": {
-     "fmt": "FILM IN INGLESE 4K",
-     "when": "13/10 20:45"
-    }
+    "title": "IL DOTTOR STRANAMORE, OVVERO: COME IMPARAI A NON PREOCCUPARMI E AD AMARE LA BOMBA",
+    "url": "/scheda/il-dottor-stranamore-ovvero-come-imparai-a-non-preoccuparmi-e-ad-amare-la-bomba/48709/3364/"
    },
-   "title": "IL DOTTOR STRANAMORE, OVVERO: COME IMPARAI A NON PREOCCUPARMI E AD AMARE LA BOMBA",
-   "url": "/scheda/il-dottor-stranamore-ovvero-come-imparai-a-non-preoccuparmi-e-ad-amare-la-bomba/48709/3364/"
-  },
-  "lalbero-di-molto-lontano": {
-   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48721.jpg",
-   "shows": {
-    "131262": {
-     "fmt": "2D",
-     "when": "08/10 17:10"
+   "lalbero-di-molto-lontano": {
+    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48721.jpg",
+    "shows": {
+     "131262": {
+      "fmt": "2D",
+      "when": "08/10 17:10"
+     },
+     "131264": {
+      "fmt": "2D",
+      "when": "09/10 17:10"
+     },
+     "131266": {
+      "fmt": "2D",
+      "when": "10/10 17:30"
+     },
+     "131268": {
+      "fmt": "2D",
+      "when": "11/10 15:20"
+     },
+     "131270": {
+      "fmt": "2D",
+      "when": "12/10 17:10"
+     },
+     "131272": {
+      "fmt": "2D",
+      "when": "13/10 17:10"
+     },
+     "131274": {
+      "fmt": "2D",
+      "when": "14/10 17:10"
+     },
+     "131277": {
+      "fmt": "2D",
+      "when": "10/10 15:10"
+     },
+     "131279": {
+      "fmt": "2D",
+      "when": "11/10 10:40"
+     }
     },
-    "131264": {
-     "fmt": "2D",
-     "when": "09/10 17:10"
-    },
-    "131266": {
-     "fmt": "2D",
-     "when": "10/10 17:30"
-    },
-    "131268": {
-     "fmt": "2D",
-     "when": "11/10 15:20"
-    },
-    "131270": {
-     "fmt": "2D",
-     "when": "12/10 17:10"
-    },
-    "131272": {
-     "fmt": "2D",
-     "when": "13/10 17:10"
-    },
-    "131274": {
-     "fmt": "2D",
-     "when": "14/10 17:10"
-    },
-    "131277": {
-     "fmt": "2D",
-     "when": "10/10 15:10"
-    },
-    "131279": {
-     "fmt": "2D",
-     "when": "11/10 10:40"
-    }
+    "title": "L'ALBERO DI MOLTO LONTANO",
+    "url": "/scheda/lalbero-di-molto-lontano/48721/3364/"
    },
-   "title": "L'ALBERO DI MOLTO LONTANO",
-   "url": "/scheda/lalbero-di-molto-lontano/48721/3364/"
-  },
-  "lestranea": {
-   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48593.jpg",
-   "shows": {
-    "131297": {
-     "fmt": "2D",
-     "when": "11/10 15:00"
+   "lestranea": {
+    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48593.jpg",
+    "shows": {
+     "131297": {
+      "fmt": "2D",
+      "when": "11/10 15:00"
+     },
+     "131300": {
+      "fmt": "2D",
+      "when": "08/10 17:25"
+     },
+     "131302": {
+      "fmt": "2D",
+      "when": "09/10 17:25"
+     },
+     "131304": {
+      "fmt": "2D",
+      "when": "10/10 20:15"
+     },
+     "131308": {
+      "fmt": "2D",
+      "when": "12/10 20:30"
+     },
+     "131310": {
+      "fmt": "2D",
+      "when": "13/10 20:30"
+     },
+     "131312": {
+      "fmt": "2D",
+      "when": "14/10 20:30"
+     },
+     "131319": {
+      "fmt": "2D",
+      "when": "08/10 20:30"
+     },
+     "131321": {
+      "fmt": "2D",
+      "when": "09/10 20:15"
+     },
+     "131323": {
+      "fmt": "2D",
+      "when": "10/10 17:10"
+     },
+     "131325": {
+      "fmt": "2D",
+      "when": "11/10 20:30"
+     },
+     "131326": {
+      "fmt": "2D",
+      "when": "09/10 22:35"
+     },
+     "131328": {
+      "fmt": "2D",
+      "when": "10/10 22:35"
+     },
+     "131330": {
+      "fmt": "2D",
+      "when": "11/10 17:10"
+     }
     },
-    "131300": {
-     "fmt": "2D",
-     "when": "08/10 17:25"
-    },
-    "131302": {
-     "fmt": "2D",
-     "when": "09/10 17:25"
-    },
-    "131304": {
-     "fmt": "2D",
-     "when": "10/10 20:15"
-    },
-    "131308": {
-     "fmt": "2D",
-     "when": "12/10 20:30"
-    },
-    "131310": {
-     "fmt": "2D",
-     "when": "13/10 20:30"
-    },
-    "131312": {
-     "fmt": "2D",
-     "when": "14/10 20:30"
-    },
-    "131319": {
-     "fmt": "2D",
-     "when": "08/10 20:30"
-    },
-    "131321": {
-     "fmt": "2D",
-     "when": "09/10 20:15"
-    },
-    "131323": {
-     "fmt": "2D",
-     "when": "10/10 17:10"
-    },
-    "131325": {
-     "fmt": "2D",
-     "when": "11/10 20:30"
-    },
-    "131326": {
-     "fmt": "2D",
-     "when": "09/10 22:35"
-    },
-    "131328": {
-     "fmt": "2D",
-     "when": "10/10 22:35"
-    },
-    "131330": {
-     "fmt": "2D",
-     "when": "11/10 17:10"
-    }
+    "title": "L'ESTRANEA",
+    "url": "/scheda/lestranea/48593/3364/"
    },
-   "title": "L'ESTRANEA",
-   "url": "/scheda/lestranea/48593/3364/"
-  },
-  "mammina": {
-   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48720.jpg",
-   "shows": {
-    "131263": {
-     "fmt": "2D",
-     "when": "08/10 21:10"
+   "mammina": {
+    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48720.jpg",
+    "shows": {
+     "131263": {
+      "fmt": "2D",
+      "when": "08/10 21:10"
+     },
+     "131265": {
+      "fmt": "2D",
+      "when": "09/10 22:40"
+     },
+     "131267": {
+      "fmt": "2D",
+      "when": "10/10 20:30"
+     },
+     "131269": {
+      "fmt": "2D",
+      "when": "11/10 21:10"
+     },
+     "131271": {
+      "fmt": "2D",
+      "when": "12/10 21:10"
+     },
+     "131273": {
+      "fmt": "2D",
+      "when": "13/10 21:10"
+     },
+     "131275": {
+      "fmt": "2D",
+      "when": "14/10 21:10"
+     },
+     "131276": {
+      "fmt": "2D",
+      "when": "09/10 20:30"
+     },
+     "131278": {
+      "fmt": "2D",
+      "when": "10/10 22:40"
+     },
+     "131280": {
+      "fmt": "2D",
+      "when": "11/10 18:00"
+     }
     },
-    "131265": {
-     "fmt": "2D",
-     "when": "09/10 22:40"
-    },
-    "131267": {
-     "fmt": "2D",
-     "when": "10/10 20:30"
-    },
-    "131269": {
-     "fmt": "2D",
-     "when": "11/10 21:10"
-    },
-    "131271": {
-     "fmt": "2D",
-     "when": "12/10 21:10"
-    },
-    "131273": {
-     "fmt": "2D",
-     "when": "13/10 21:10"
-    },
-    "131275": {
-     "fmt": "2D",
-     "when": "14/10 21:10"
-    },
-    "131276": {
-     "fmt": "2D",
-     "when": "09/10 20:30"
-    },
-    "131278": {
-     "fmt": "2D",
-     "when": "10/10 22:40"
-    },
-    "131280": {
-     "fmt": "2D",
-     "when": "11/10 18:00"
-    }
+    "title": "MAMMINA",
+    "url": "/scheda/mammina/48720/3364/"
    },
-   "title": "MAMMINA",
-   "url": "/scheda/mammina/48720/3364/"
-  },
-  "matrix-1999-riedizione": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/1c48cf5f5092bdb2d4511db1f6259d23b76f9825948c2bccab2db953663f8e0c2efd43222e3a65e96b36aa1a32be8e19769cfc97030847c030adef8c474d39ce.jpg",
-   "shows": {
-    "131001": {
-     "fmt": "ENERGIA",
-     "when": "26/10 17:30"
+   "matrix-1999-riedizione": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/1c48cf5f5092bdb2d4511db1f6259d23b76f9825948c2bccab2db953663f8e0c2efd43222e3a65e96b36aa1a32be8e19769cfc97030847c030adef8c474d39ce.jpg",
+    "shows": {
+     "131001": {
+      "fmt": "ENERGIA",
+      "when": "26/10 17:30"
+     },
+     "131002": {
+      "fmt": "ENERGIA",
+      "when": "26/10 21:00"
+     },
+     "131003": {
+      "fmt": "ENERGIA",
+      "when": "27/10 17:30"
+     },
+     "131004": {
+      "fmt": "FILM IN INGLESE ENERGIA",
+      "when": "27/10 21:00"
+     }
     },
-    "131002": {
-     "fmt": "ENERGIA",
-     "when": "26/10 21:00"
-    },
-    "131003": {
-     "fmt": "ENERGIA",
-     "when": "27/10 17:30"
-    },
-    "131004": {
-     "fmt": "FILM IN INGLESE ENERGIA",
-     "when": "27/10 21:00"
-    }
+    "title": "MATRIX [1999] - RIEDIZIONE",
+    "url": "https://www.arcadiacinema.com/scheda/matrix-1999-riedizione/42023/"
    },
-   "title": "MATRIX [1999] - RIEDIZIONE",
-   "url": "https://www.arcadiacinema.com/scheda/matrix-1999-riedizione/42023/"
-  },
-  "naza": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/d3a32a04c4ab9961e173125abbc60a2196c1c327de16f4cf51880cde5d77f6aa38101aaf283f2e2476d065194a2b505f7a2020ee5e67de8d0aa3cf465f614720.jpg",
-   "shows": {
-    "131318": {
-     "fmt": "2D",
-     "when": "08/10 17:30"
+   "naza": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/d3a32a04c4ab9961e173125abbc60a2196c1c327de16f4cf51880cde5d77f6aa38101aaf283f2e2476d065194a2b505f7a2020ee5e67de8d0aa3cf465f614720.jpg",
+    "shows": {
+     "131318": {
+      "fmt": "2D",
+      "when": "08/10 17:30"
+     },
+     "131320": {
+      "fmt": "2D",
+      "when": "09/10 17:30"
+     },
+     "131322": {
+      "fmt": "2D",
+      "when": "10/10 15:20"
+     },
+     "131324": {
+      "fmt": "2D",
+      "when": "11/10 10:50"
+     },
+     "131327": {
+      "fmt": "2D",
+      "when": "10/10 20:00"
+     },
+     "131329": {
+      "fmt": "2D",
+      "when": "11/10 15:20"
+     },
+     "131331": {
+      "fmt": "2D",
+      "when": "12/10 17:30"
+     },
+     "131332": {
+      "fmt": "2D",
+      "when": "13/10 17:30"
+     },
+     "131333": {
+      "fmt": "2D",
+      "when": "14/10 17:30"
+     }
     },
-    "131320": {
-     "fmt": "2D",
-     "when": "09/10 17:30"
-    },
-    "131322": {
-     "fmt": "2D",
-     "when": "10/10 15:20"
-    },
-    "131324": {
-     "fmt": "2D",
-     "when": "11/10 10:50"
-    },
-    "131327": {
-     "fmt": "2D",
-     "when": "10/10 20:00"
-    },
-    "131329": {
-     "fmt": "2D",
-     "when": "11/10 15:20"
-    },
-    "131331": {
-     "fmt": "2D",
-     "when": "12/10 17:30"
-    },
-    "131332": {
-     "fmt": "2D",
-     "when": "13/10 17:30"
-    },
-    "131333": {
-     "fmt": "2D",
-     "when": "14/10 17:30"
-    }
+    "title": "NAZA",
+    "url": "/scheda/naza/48682/3364/"
    },
-   "title": "NAZA",
-   "url": "/scheda/naza/48682/3364/"
-  },
-  "odissea-2026": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/7efd1bf999801fe57d7f176c695e11be0d008f8fa45df4e1a7e126c74b9743029fec9749e4ae4fc306860754205442cb7c5b6fbcd3d6eb29d50efadd01192d00.jpg",
-   "shows": {
-    "131005": {
-     "fmt": "70MM ENERGIA",
-     "when": "08/10 17:00"
+   "odissea-2026": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/7efd1bf999801fe57d7f176c695e11be0d008f8fa45df4e1a7e126c74b9743029fec9749e4ae4fc306860754205442cb7c5b6fbcd3d6eb29d50efadd01192d00.jpg",
+    "shows": {
+     "131005": {
+      "fmt": "70MM ENERGIA",
+      "when": "08/10 17:00"
+     },
+     "131006": {
+      "fmt": "70MM ENERGIA",
+      "when": "09/10 21:00"
+     },
+     "131007": {
+      "fmt": "70MM ENERGIA",
+      "when": "10/10 17:00"
+     },
+     "131008": {
+      "fmt": "70MM ENERGIA",
+      "when": "10/10 21:00"
+     },
+     "131009": {
+      "fmt": "70MM ENERGIA",
+      "when": "11/10 13:00"
+     },
+     "131010": {
+      "fmt": "70MM ENERGIA",
+      "when": "11/10 17:00"
+     },
+     "131011": {
+      "fmt": "70MM ENERGIA",
+      "when": "12/10 21:00"
+     },
+     "131012": {
+      "fmt": "70MM ENERGIA",
+      "when": "13/10 17:00"
+     },
+     "131013": {
+      "fmt": "70MM ENERGIA",
+      "when": "14/10 21:00"
+     },
+     "131149": {
+      "fmt": "FILM IN INGLESE 70MM ENERGIA",
+      "when": "10/10 13:00"
+     },
+     "131166": {
+      "fmt": "70MM ENERGIA",
+      "when": "08/10 21:00"
+     },
+     "131167": {
+      "fmt": "70MM ENERGIA",
+      "when": "09/10 17:00"
+     },
+     "131170": {
+      "fmt": "70MM ENERGIA",
+      "when": "11/10 09:00"
+     },
+     "131171": {
+      "fmt": "70MM ENERGIA",
+      "when": "11/10 21:00"
+     },
+     "131172": {
+      "fmt": "70MM ENERGIA",
+      "when": "12/10 17:00"
+     },
+     "131173": {
+      "fmt": "FILM IN INGLESE 70MM ENERGIA",
+      "when": "13/10 21:00"
+     },
+     "131174": {
+      "fmt": "70MM ENERGIA",
+      "when": "14/10 17:00"
+     }
     },
-    "131006": {
-     "fmt": "70MM ENERGIA",
-     "when": "09/10 21:00"
-    },
-    "131007": {
-     "fmt": "70MM ENERGIA",
-     "when": "10/10 17:00"
-    },
-    "131008": {
-     "fmt": "70MM ENERGIA",
-     "when": "10/10 21:00"
-    },
-    "131009": {
-     "fmt": "70MM ENERGIA",
-     "when": "11/10 13:00"
-    },
-    "131010": {
-     "fmt": "70MM ENERGIA",
-     "when": "11/10 17:00"
-    },
-    "131011": {
-     "fmt": "70MM ENERGIA",
-     "when": "12/10 21:00"
-    },
-    "131012": {
-     "fmt": "70MM ENERGIA",
-     "when": "13/10 17:00"
-    },
-    "131013": {
-     "fmt": "70MM ENERGIA",
-     "when": "14/10 21:00"
-    },
-    "131149": {
-     "fmt": "FILM IN INGLESE 70MM ENERGIA",
-     "when": "10/10 13:00"
-    },
-    "131166": {
-     "fmt": "70MM ENERGIA",
-     "when": "08/10 21:00"
-    },
-    "131167": {
-     "fmt": "70MM ENERGIA",
-     "when": "09/10 17:00"
-    },
-    "131170": {
-     "fmt": "70MM ENERGIA",
-     "when": "11/10 09:00"
-    },
-    "131171": {
-     "fmt": "70MM ENERGIA",
-     "when": "11/10 21:00"
-    },
-    "131172": {
-     "fmt": "70MM ENERGIA",
-     "when": "12/10 17:00"
-    },
-    "131173": {
-     "fmt": "FILM IN INGLESE 70MM ENERGIA",
-     "when": "13/10 21:00"
-    },
-    "131174": {
-     "fmt": "70MM ENERGIA",
-     "when": "14/10 17:00"
-    }
+    "title": "ODISSEA [2026]",
+    "url": "https://www.arcadiacinema.com/scheda/odissea-2026/47434/"
    },
-   "title": "ODISSEA [2026]",
-   "url": "https://www.arcadiacinema.com/scheda/odissea-2026/47434/"
-  },
-  "primetime": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/6bd5e36a28f7c6b2ef9495dc5e1ac5e87a484f879fc3053c256cd4496470fe9af22aa965342aa14f4f3edaf229183dafb565bec85916296f917a93e3d1f3c049.jpg",
-   "shows": {
-    "130921": {
-     "fmt": "2D",
-     "when": "14/10 20:45"
-    }
+   "primetime": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/6bd5e36a28f7c6b2ef9495dc5e1ac5e87a484f879fc3053c256cd4496470fe9af22aa965342aa14f4f3edaf229183dafb565bec85916296f917a93e3d1f3c049.jpg",
+    "shows": {
+     "130921": {
+      "fmt": "2D",
+      "when": "14/10 20:45"
+     }
+    },
+    "title": "PRIMETIME",
+    "url": "/scheda/primetime/48697/3364/"
    },
-   "title": "PRIMETIME",
-   "url": "/scheda/primetime/48697/3364/"
-  },
-  "the-social-il-prezzo-della-verita": {
-   "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48312.jpg",
-   "shows": {
-    "131301": {
-     "fmt": "2D",
-     "when": "08/10 20:20"
+   "the-social-il-prezzo-della-verita": {
+    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48312.jpg",
+    "shows": {
+     "131301": {
+      "fmt": "2D",
+      "when": "08/10 20:20"
+     },
+     "131303": {
+      "fmt": "2D",
+      "when": "09/10 20:00"
+     },
+     "131305": {
+      "fmt": "2D",
+      "when": "10/10 22:30"
+     },
+     "131307": {
+      "fmt": "2D",
+      "when": "11/10 20:50"
+     },
+     "131309": {
+      "fmt": "2D",
+      "when": "12/10 17:25"
+     },
+     "131311": {
+      "fmt": "2D",
+      "when": "13/10 17:25"
+     },
+     "131313": {
+      "fmt": "2D",
+      "when": "14/10 17:25"
+     },
+     "131314": {
+      "fmt": "2D",
+      "when": "09/10 22:30"
+     },
+     "131315": {
+      "fmt": "2D",
+      "when": "10/10 17:40"
+     },
+     "131317": {
+      "fmt": "2D",
+      "when": "11/10 15:10"
+     }
     },
-    "131303": {
-     "fmt": "2D",
-     "when": "09/10 20:00"
-    },
-    "131305": {
-     "fmt": "2D",
-     "when": "10/10 22:30"
-    },
-    "131307": {
-     "fmt": "2D",
-     "when": "11/10 20:50"
-    },
-    "131309": {
-     "fmt": "2D",
-     "when": "12/10 17:25"
-    },
-    "131311": {
-     "fmt": "2D",
-     "when": "13/10 17:25"
-    },
-    "131313": {
-     "fmt": "2D",
-     "when": "14/10 17:25"
-    },
-    "131314": {
-     "fmt": "2D",
-     "when": "09/10 22:30"
-    },
-    "131315": {
-     "fmt": "2D",
-     "when": "10/10 17:40"
-    },
-    "131317": {
-     "fmt": "2D",
-     "when": "11/10 15:10"
-    }
+    "title": "THE SOCIAL - IL PREZZO DELLA VERITÀ",
+    "url": "/scheda/the-social-il-prezzo-della-verita/48312/3364/"
    },
-   "title": "THE SOCIAL - IL PREZZO DELLA VERITÀ",
-   "url": "/scheda/the-social-il-prezzo-della-verita/48312/3364/"
-  },
-  "verity": {
-   "poster": "https://www.arcadiacinema.com/cdn/movies/4e63a95d87a77a438cecd49369d3b751befd8de5bd10687f6cad29440981889dd4e57e97d0718bc3bdf3a612a0112b131b848bc2bc6ef5a819e87bda3c75e096.jpg",
-   "shows": {
-    "131281": {
-     "fmt": "2D",
-     "when": "08/10 17:20"
+   "verity": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/4e63a95d87a77a438cecd49369d3b751befd8de5bd10687f6cad29440981889dd4e57e97d0718bc3bdf3a612a0112b131b848bc2bc6ef5a819e87bda3c75e096.jpg",
+    "shows": {
+     "131281": {
+      "fmt": "2D",
+      "when": "08/10 17:20"
+     },
+     "131283": {
+      "fmt": "2D",
+      "when": "09/10 19:50"
+     },
+     "131285": {
+      "fmt": "2D",
+      "when": "10/10 21:20"
+     },
+     "131291": {
+      "fmt": "2D",
+      "when": "13/10 17:20"
+     },
+     "131293": {
+      "fmt": "2D",
+      "when": "14/10 20:40"
+     },
+     "131306": {
+      "fmt": "2D",
+      "when": "11/10 17:40"
+     }
     },
-    "131283": {
-     "fmt": "2D",
-     "when": "09/10 19:50"
-    },
-    "131285": {
-     "fmt": "2D",
-     "when": "10/10 21:20"
-    },
-    "131291": {
-     "fmt": "2D",
-     "when": "13/10 17:20"
-    },
-    "131293": {
-     "fmt": "2D",
-     "when": "14/10 20:40"
-    },
-    "131306": {
-     "fmt": "2D",
-     "when": "11/10 17:40"
-    }
-   },
-   "title": "VERITY",
-   "url": "/scheda/verity/48063/3364/"
+    "title": "VERITY",
+    "url": "/scheda/verity/48063/3364/"
+   }
   }
- }
+ },
+ "offset": 0
 }
