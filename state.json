@@ -1,6 +1,707 @@
 {
- "chats": {},
+ "chats": {
+  "5118126735": [
+   "melzo",
+   "bellinzago"
+  ]
+ },
  "cinemas": {
+  "bellinzago": {
+   "avengers-doomsday": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/c9e78d4fdbcc781a173ad231fc128c26b261ea8e6b6c2b19ee6940a1acf6fb7fb68755bb19bef93a6556084e56478cb86739411a3cb1c4f86d999bf49da5104d.jpg",
+    "shows": {
+     "223057": {
+      "fmt": "INFINITY VISION",
+      "when": "16/12 15:30"
+     },
+     "223058": {
+      "fmt": "INFINITY VISION",
+      "when": "16/12 20:00"
+     },
+     "223059": {
+      "fmt": "INFINITY VISION",
+      "when": "17/12 15:30"
+     },
+     "223060": {
+      "fmt": "INFINITY VISION",
+      "when": "17/12 20:00"
+     },
+     "223061": {
+      "fmt": "INFINITY VISION",
+      "when": "18/12 15:30"
+     },
+     "223062": {
+      "fmt": "INFINITY VISION",
+      "when": "18/12 20:00"
+     },
+     "223063": {
+      "fmt": "INFINITY VISION",
+      "when": "19/12 15:30"
+     },
+     "223064": {
+      "fmt": "INFINITY VISION",
+      "when": "19/12 20:00"
+     },
+     "223065": {
+      "fmt": "INFINITY VISION",
+      "when": "20/12 15:30"
+     },
+     "223066": {
+      "fmt": "INFINITY VISION",
+      "when": "20/12 20:00"
+     },
+     "223067": {
+      "fmt": "INFINITY VISION",
+      "when": "21/12 15:30"
+     },
+     "223068": {
+      "fmt": "INFINITY VISION",
+      "when": "21/12 20:00"
+     },
+     "223069": {
+      "fmt": "INFINITY VISION",
+      "when": "22/12 15:30"
+     },
+     "223070": {
+      "fmt": "INFINITY VISION",
+      "when": "22/12 20:00"
+     },
+     "223071": {
+      "fmt": "INFINITY VISION",
+      "when": "23/12 15:30"
+     },
+     "223072": {
+      "fmt": "INFINITY VISION",
+      "when": "23/12 20:00"
+     },
+     "223073": {
+      "fmt": "INFINITY VISION",
+      "when": "16/12 13:30"
+     },
+     "223074": {
+      "fmt": "INFINITY VISION",
+      "when": "16/12 17:30"
+     },
+     "223075": {
+      "fmt": "INFINITY VISION",
+      "when": "16/12 21:30"
+     },
+     "223076": {
+      "fmt": "INFINITY VISION",
+      "when": "17/12 13:30"
+     },
+     "223077": {
+      "fmt": "INFINITY VISION",
+      "when": "17/12 17:30"
+     },
+     "223078": {
+      "fmt": "INFINITY VISION",
+      "when": "17/12 21:30"
+     },
+     "223079": {
+      "fmt": "INFINITY VISION",
+      "when": "18/12 13:30"
+     },
+     "223080": {
+      "fmt": "INFINITY VISION",
+      "when": "18/12 17:30"
+     },
+     "223081": {
+      "fmt": "INFINITY VISION",
+      "when": "18/12 21:30"
+     },
+     "223082": {
+      "fmt": "INFINITY VISION",
+      "when": "19/12 13:30"
+     },
+     "223083": {
+      "fmt": "INFINITY VISION",
+      "when": "19/12 17:30"
+     },
+     "223084": {
+      "fmt": "INFINITY VISION",
+      "when": "19/12 21:30"
+     },
+     "223085": {
+      "fmt": "INFINITY VISION",
+      "when": "20/12 13:30"
+     },
+     "223086": {
+      "fmt": "INFINITY VISION",
+      "when": "20/12 17:30"
+     },
+     "223087": {
+      "fmt": "INFINITY VISION",
+      "when": "20/12 21:30"
+     },
+     "223088": {
+      "fmt": "INFINITY VISION",
+      "when": "21/12 13:30"
+     },
+     "223089": {
+      "fmt": "INFINITY VISION",
+      "when": "21/12 17:30"
+     },
+     "223090": {
+      "fmt": "INFINITY VISION",
+      "when": "21/12 21:30"
+     },
+     "223091": {
+      "fmt": "INFINITY VISION",
+      "when": "22/12 13:30"
+     },
+     "223092": {
+      "fmt": "INFINITY VISION",
+      "when": "22/12 17:30"
+     },
+     "223093": {
+      "fmt": "INFINITY VISION",
+      "when": "22/12 21:30"
+     },
+     "223094": {
+      "fmt": "INFINITY VISION",
+      "when": "23/12 13:30"
+     },
+     "223095": {
+      "fmt": "INFINITY VISION",
+      "when": "23/12 17:30"
+     },
+     "223096": {
+      "fmt": "INFINITY VISION",
+      "when": "23/12 21:30"
+     },
+     "223097": {
+      "fmt": "INFINITY VISION",
+      "when": "15/12 00:01"
+     }
+    },
+    "title": "AVENGERS - DOOMSDAY",
+    "url": "https://www.arcadiacinema.com/scheda/avengers-doomsday/48784/"
+   },
+   "avengers-endgame-extra": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/b182d1beda5de63f258d7957c611853ed8aa343553d2bce273d66507f6781cabd31e4aa0463b22a71e02fb668dee431f3cfb0bc40f77432fa4de24299113f995.jpg",
+    "shows": {
+     "223190": {
+      "fmt": "2D",
+      "when": "10/10 16:00"
+     },
+     "223195": {
+      "fmt": "2D",
+      "when": "11/10 17:45"
+     }
+    },
+    "title": "AVENGERS: ENDGAME EXTRA",
+    "url": "/scheda/avengers-endgame-extra/48525/3365/"
+   },
+   "carlo-acutis-il-giovane-santo": {
+    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48707.jpg",
+    "shows": {
+     "222932": {
+      "fmt": "2D",
+      "when": "15/10 20:00"
+     },
+     "222933": {
+      "fmt": "2D",
+      "when": "16/10 20:00"
+     }
+    },
+    "title": "CARLO ACUTIS. IL GIOVANE SANTO",
+    "url": "/scheda/carlo-acutis-il-giovane-santo/48707/3365/"
+   },
+   "digger-2026": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/eec4df2672c82ce0bbacb6c95f549be5a8c53aebc5a4c8c160fe732c6c69776f972f2a1af4593b9f30b4cd5bee0c9fd3e6bae69eaa2ff31aeb9c98a537871b1c.jpg",
+    "shows": {
+     "223117": {
+      "fmt": "2D",
+      "when": "08/10 20:50"
+     },
+     "223120": {
+      "fmt": "2D",
+      "when": "09/10 22:00"
+     },
+     "223123": {
+      "fmt": "2D",
+      "when": "10/10 22:00"
+     },
+     "223127": {
+      "fmt": "2D",
+      "when": "11/10 20:50"
+     },
+     "223129": {
+      "fmt": "2D",
+      "when": "12/10 20:50"
+     },
+     "223130": {
+      "fmt": "2D",
+      "when": "13/10 17:30"
+     },
+     "223133": {
+      "fmt": "2D",
+      "when": "14/10 20:50"
+     }
+    },
+    "title": "DIGGER [2026]",
+    "url": "https://arcadiacinema.com/scheda/digger-2026/48062/"
+   },
+   "dune-parte-tre": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/6e6387350189c9dc215bde84e15315afcedfd55eb1dde25f10b0070436f76012668a68a3f19ea2802b673e47df1c9ee93e2407cffca1a8fd22150b35c713f3ac.jpg",
+    "shows": {
+     "222761": {
+      "fmt": "2D",
+      "when": "15/12 20:00"
+     }
+    },
+    "title": "DUNE PARTE TRE",
+    "url": "https://arcadiacinema.com/scheda/dune-parte-tre/48067/"
+   },
+   "heart-of-the-beast-nel-profondo-selvaggio": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/40f1fd35dfdd397f6f600f01d2dcda4941633ffac90fb7bacf0f81a1f3b70a349103842160b654b4af273baecd7518482540d32d2eecc526e8241017c2efb969.jpg",
+    "shows": {
+     "223111": {
+      "fmt": "2D",
+      "when": "12/10 20:40"
+     },
+     "223153": {
+      "fmt": "2D",
+      "when": "08/10 21:00"
+     },
+     "223155": {
+      "fmt": "2D",
+      "when": "09/10 21:00"
+     },
+     "223156": {
+      "fmt": "2D",
+      "when": "10/10 15:00"
+     },
+     "223158": {
+      "fmt": "2D",
+      "when": "10/10 21:00"
+     },
+     "223159": {
+      "fmt": "2D",
+      "when": "11/10 15:00"
+     },
+     "223161": {
+      "fmt": "2D",
+      "when": "11/10 21:00"
+     },
+     "223165": {
+      "fmt": "2D",
+      "when": "13/10 21:00"
+     },
+     "223170": {
+      "fmt": "2D",
+      "when": "09/10 18:00"
+     }
+    },
+    "title": "HEART OF THE BEAST - NEL PROFONDO SELVAGGIO",
+    "url": "/scheda/heart-of-the-beast-nel-profondo-selvaggio/48311/3365/"
+   },
+   "lalbero-di-molto-lontano": {
+    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48721.jpg",
+    "shows": {
+     "223152": {
+      "fmt": "2D",
+      "when": "08/10 17:25"
+     },
+     "223154": {
+      "fmt": "2D",
+      "when": "09/10 17:50"
+     },
+     "223157": {
+      "fmt": "2D",
+      "when": "10/10 17:25"
+     },
+     "223160": {
+      "fmt": "2D",
+      "when": "11/10 17:25"
+     },
+     "223162": {
+      "fmt": "2D",
+      "when": "12/10 17:25"
+     },
+     "223164": {
+      "fmt": "2D",
+      "when": "13/10 17:25"
+     },
+     "223166": {
+      "fmt": "2D",
+      "when": "14/10 17:25"
+     },
+     "223173": {
+      "fmt": "2D",
+      "when": "10/10 15:20"
+     },
+     "223177": {
+      "fmt": "2D",
+      "when": "11/10 15:20"
+     }
+    },
+    "title": "L'ALBERO DI MOLTO LONTANO",
+    "url": "/scheda/lalbero-di-molto-lontano/48721/3365/"
+   },
+   "lestranea": {
+    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48593.jpg",
+    "shows": {
+     "223134": {
+      "fmt": "2D",
+      "when": "08/10 17:20"
+     },
+     "223135": {
+      "fmt": "2D",
+      "when": "08/10 20:30"
+     },
+     "223136": {
+      "fmt": "2D",
+      "when": "09/10 17:20"
+     },
+     "223137": {
+      "fmt": "2D",
+      "when": "09/10 20:10"
+     },
+     "223138": {
+      "fmt": "2D",
+      "when": "09/10 22:30"
+     },
+     "223139": {
+      "fmt": "2D",
+      "when": "10/10 17:20"
+     },
+     "223140": {
+      "fmt": "2D",
+      "when": "10/10 20:10"
+     },
+     "223141": {
+      "fmt": "2D",
+      "when": "10/10 22:30"
+     },
+     "223142": {
+      "fmt": "2D",
+      "when": "10/10 14:50"
+     },
+     "223143": {
+      "fmt": "2D",
+      "when": "11/10 14:50"
+     },
+     "223144": {
+      "fmt": "2D",
+      "when": "11/10 17:20"
+     },
+     "223145": {
+      "fmt": "2D",
+      "when": "11/10 20:30"
+     },
+     "223146": {
+      "fmt": "2D",
+      "when": "12/10 17:20"
+     },
+     "223147": {
+      "fmt": "2D",
+      "when": "12/10 20:30"
+     },
+     "223148": {
+      "fmt": "2D",
+      "when": "13/10 17:20"
+     },
+     "223149": {
+      "fmt": "2D",
+      "when": "13/10 20:30"
+     },
+     "223150": {
+      "fmt": "2D",
+      "when": "14/10 17:20"
+     },
+     "223151": {
+      "fmt": "2D",
+      "when": "14/10 20:30"
+     }
+    },
+    "title": "L'ESTRANEA",
+    "url": "/scheda/lestranea/48593/3365/"
+   },
+   "mammina": {
+    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48720.jpg",
+    "shows": {
+     "223168": {
+      "fmt": "2D",
+      "when": "08/10 17:50"
+     },
+     "223169": {
+      "fmt": "2D",
+      "when": "08/10 21:20"
+     },
+     "223171": {
+      "fmt": "2D",
+      "when": "09/10 20:30"
+     },
+     "223172": {
+      "fmt": "2D",
+      "when": "09/10 22:40"
+     },
+     "223174": {
+      "fmt": "2D",
+      "when": "10/10 17:50"
+     },
+     "223175": {
+      "fmt": "2D",
+      "when": "10/10 20:30"
+     },
+     "223176": {
+      "fmt": "2D",
+      "when": "10/10 22:40"
+     },
+     "223178": {
+      "fmt": "2D",
+      "when": "11/10 17:50"
+     },
+     "223179": {
+      "fmt": "2D",
+      "when": "11/10 21:20"
+     },
+     "223180": {
+      "fmt": "2D",
+      "when": "12/10 17:50"
+     },
+     "223181": {
+      "fmt": "2D",
+      "when": "12/10 21:20"
+     },
+     "223182": {
+      "fmt": "2D",
+      "when": "13/10 17:50"
+     },
+     "223183": {
+      "fmt": "2D",
+      "when": "13/10 21:20"
+     },
+     "223184": {
+      "fmt": "2D",
+      "when": "14/10 17:50"
+     },
+     "223185": {
+      "fmt": "2D",
+      "when": "14/10 21:20"
+     }
+    },
+    "title": "MAMMINA",
+    "url": "/scheda/mammina/48720/3365/"
+   },
+   "matrix-1999-riedizione": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/106741ac3b633230112b9fda11378bc669f6c469e940549e7c5552f2d5b766b0658a440c8a61fbe1dbd50ad6b360c0369c19191e8e9fc0c472151933ec1df469.jpg",
+    "shows": {
+     "222931": {
+      "fmt": "2D",
+      "when": "26/10 21:00"
+     }
+    },
+    "title": "MATRIX [1999] - RIEDIZIONE",
+    "url": "https://www.arcadiacinema.com/scheda/matrix-1999-riedizione/42023/"
+   },
+   "naza": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/d3a32a04c4ab9961e173125abbc60a2196c1c327de16f4cf51880cde5d77f6aa38101aaf283f2e2476d065194a2b505f7a2020ee5e67de8d0aa3cf465f614720.jpg",
+    "shows": {
+     "223116": {
+      "fmt": "2D",
+      "when": "08/10 17:30"
+     },
+     "223118": {
+      "fmt": "2D",
+      "when": "09/10 17:30"
+     },
+     "223119": {
+      "fmt": "2D",
+      "when": "09/10 20:00"
+     },
+     "223121": {
+      "fmt": "2D",
+      "when": "10/10 17:30"
+     },
+     "223122": {
+      "fmt": "2D",
+      "when": "10/10 20:00"
+     },
+     "223124": {
+      "fmt": "2D",
+      "when": "10/10 15:30"
+     },
+     "223125": {
+      "fmt": "2D",
+      "when": "11/10 15:30"
+     },
+     "223126": {
+      "fmt": "2D",
+      "when": "11/10 17:30"
+     },
+     "223128": {
+      "fmt": "2D",
+      "when": "12/10 17:30"
+     },
+     "223131": {
+      "fmt": "2D",
+      "when": "13/10 20:50"
+     },
+     "223132": {
+      "fmt": "2D",
+      "when": "14/10 17:30"
+     },
+     "223167": {
+      "fmt": "2D",
+      "when": "14/10 21:00"
+     }
+    },
+    "title": "NAZA",
+    "url": "/scheda/naza/48682/3365/"
+   },
+   "resident-evil-2026": {
+    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48060.jpg",
+    "shows": {
+     "223102": {
+      "fmt": "2D",
+      "when": "09/10 22:50"
+     },
+     "223106": {
+      "fmt": "2D",
+      "when": "10/10 22:50"
+     },
+     "223163": {
+      "fmt": "2D",
+      "when": "12/10 21:00"
+     }
+    },
+    "title": "RESIDENT EVIL [2026]",
+    "url": "/scheda/resident-evil-2026/48060/3365/"
+   },
+   "the-social-il-prezzo-della-verita": {
+    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48312.jpg",
+    "shows": {
+     "223098": {
+      "fmt": "2D",
+      "when": "08/10 17:40"
+     },
+     "223099": {
+      "fmt": "2D",
+      "when": "08/10 20:40"
+     },
+     "223100": {
+      "fmt": "2D",
+      "when": "09/10 17:40"
+     },
+     "223101": {
+      "fmt": "2D",
+      "when": "09/10 20:20"
+     },
+     "223103": {
+      "fmt": "2D",
+      "when": "10/10 15:10"
+     },
+     "223104": {
+      "fmt": "2D",
+      "when": "10/10 17:40"
+     },
+     "223105": {
+      "fmt": "2D",
+      "when": "10/10 20:20"
+     },
+     "223107": {
+      "fmt": "2D",
+      "when": "11/10 15:10"
+     },
+     "223108": {
+      "fmt": "2D",
+      "when": "11/10 17:40"
+     },
+     "223109": {
+      "fmt": "2D",
+      "when": "11/10 20:40"
+     },
+     "223110": {
+      "fmt": "2D",
+      "when": "12/10 17:40"
+     },
+     "223112": {
+      "fmt": "2D",
+      "when": "13/10 17:40"
+     },
+     "223113": {
+      "fmt": "2D",
+      "when": "13/10 20:40"
+     },
+     "223114": {
+      "fmt": "2D",
+      "when": "14/10 17:40"
+     },
+     "223115": {
+      "fmt": "2D",
+      "when": "14/10 20:40"
+     }
+    },
+    "title": "THE SOCIAL - IL PREZZO DELLA VERITÀ",
+    "url": "/scheda/the-social-il-prezzo-della-verita/48312/3365/"
+   },
+   "verity": {
+    "poster": "https://www.arcadiacinema.com/cdn/movies/4e63a95d87a77a438cecd49369d3b751befd8de5bd10687f6cad29440981889dd4e57e97d0718bc3bdf3a612a0112b131b848bc2bc6ef5a819e87bda3c75e096.jpg",
+    "shows": {
+     "223186": {
+      "fmt": "2D",
+      "when": "08/10 17:10"
+     },
+     "223187": {
+      "fmt": "2D",
+      "when": "08/10 21:10"
+     },
+     "223188": {
+      "fmt": "2D",
+      "when": "09/10 17:10"
+     },
+     "223189": {
+      "fmt": "2D",
+      "when": "09/10 21:10"
+     },
+     "223191": {
+      "fmt": "2D",
+      "when": "10/10 19:50"
+     },
+     "223192": {
+      "fmt": "2D",
+      "when": "10/10 22:20"
+     },
+     "223193": {
+      "fmt": "2D",
+      "when": "11/10 15:15"
+     },
+     "223194": {
+      "fmt": "2D",
+      "when": "11/10 21:30"
+     },
+     "223196": {
+      "fmt": "2D",
+      "when": "12/10 17:10"
+     },
+     "223197": {
+      "fmt": "FILM IN INGLESE",
+      "when": "12/10 21:10"
+     },
+     "223198": {
+      "fmt": "2D",
+      "when": "13/10 17:10"
+     },
+     "223199": {
+      "fmt": "2D",
+      "when": "13/10 21:10"
+     },
+     "223200": {
+      "fmt": "2D",
+      "when": "14/10 17:10"
+     },
+     "223201": {
+      "fmt": "2D",
+      "when": "14/10 21:10"
+     }
+    },
+    "title": "VERITY",
+    "url": "/scheda/verity/48063/3365/"
+   }
+  },
   "melzo": {
    "avengers-doomsday": {
     "poster": "https://www.arcadiacinema.com/cdn/movies/c9e78d4fdbcc781a173ad231fc128c26b261ea8e6b6c2b19ee6940a1acf6fb7fb68755bb19bef93a6556084e56478cb86739411a3cb1c4f86d999bf49da5104d.jpg",
@@ -701,5 +1402,5 @@
    }
   }
  },
- "offset": 247209942
+ "offset": 247209943
 }
