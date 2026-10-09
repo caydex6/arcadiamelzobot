@@ -925,6 +925,21 @@
     "title": "DUNE PARTE TRE",
     "url": "https://arcadiacinema.com/scheda/dune-parte-tre/48067/"
    },
+   "fatherland": {
+    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48881.jpg",
+    "shows": {
+     "131369": {
+      "fmt": "2D",
+      "when": "18/11 17:20"
+     },
+     "131370": {
+      "fmt": "2D",
+      "when": "18/11 20:45"
+     }
+    },
+    "title": "FATHERLAND",
+    "url": "/scheda/fatherland/48881/3364/"
+   },
    "heart-of-the-beast-nel-profondo-selvaggio": {
     "poster": "https://www.arcadiacinema.com/cdn/movies/40f1fd35dfdd397f6f600f01d2dcda4941633ffac90fb7bacf0f81a1f3b70a349103842160b654b4af273baecd7518482540d32d2eecc526e8241017c2efb969.jpg",
     "shows": {
@@ -1251,6 +1266,21 @@
     "title": "PRIMETIME",
     "url": "/scheda/primetime/48697/3364/"
    },
+   "se-domani-non-torno": {
+    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48887.jpg",
+    "shows": {
+     "131371": {
+      "fmt": "2D",
+      "when": "25/11 17:20"
+     },
+     "131372": {
+      "fmt": "2D",
+      "when": "25/11 20:45"
+     }
+    },
+    "title": "SE DOMANI NON TORNO",
+    "url": "/scheda/se-domani-non-torno/48887/3364/"
+   },
    "serpenti": {
     "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48578.jpg",
     "shows": {
@@ -1350,6 +1380,21 @@
     },
     "title": "VERITY",
     "url": "/scheda/verity/48063/3364/"
+   },
+   "wild-horse-nine": {
+    "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48315.jpg",
+    "shows": {
+     "131367": {
+      "fmt": "2D",
+      "when": "11/11 17:20"
+     },
+     "131368": {
+      "fmt": "2D",
+      "when": "11/11 20:45"
+     }
+    },
+    "title": "WILD HORSE NINE",
+    "url": "/scheda/wild-horse-nine/48315/3364/"
    }
   }
  },
