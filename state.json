@@ -211,10 +211,6 @@
    "digger-2026": {
     "poster": "https://www.arcadiacinema.com/cdn/movies/eec4df2672c82ce0bbacb6c95f549be5a8c53aebc5a4c8c160fe732c6c69776f972f2a1af4593b9f30b4cd5bee0c9fd3e6bae69eaa2ff31aeb9c98a537871b1c.jpg",
     "shows": {
-     "223117": {
-      "fmt": "2D",
-      "when": "08/10 20:50"
-     },
      "223120": {
       "fmt": "2D",
       "when": "09/10 22:00"
@@ -261,10 +257,6 @@
       "fmt": "2D",
       "when": "12/10 20:40"
      },
-     "223153": {
-      "fmt": "2D",
-      "when": "08/10 21:00"
-     },
      "223155": {
       "fmt": "2D",
       "when": "09/10 21:00"
@@ -300,10 +292,6 @@
    "lalbero-di-molto-lontano": {
     "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48721.jpg",
     "shows": {
-     "223152": {
-      "fmt": "2D",
-      "when": "08/10 17:25"
-     },
      "223154": {
       "fmt": "2D",
       "when": "09/10 17:50"
@@ -343,14 +331,6 @@
    "lestranea": {
     "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48593.jpg",
     "shows": {
-     "223134": {
-      "fmt": "2D",
-      "when": "08/10 17:20"
-     },
-     "223135": {
-      "fmt": "2D",
-      "when": "08/10 20:30"
-     },
      "223136": {
       "fmt": "2D",
       "when": "09/10 17:20"
@@ -422,14 +402,6 @@
    "mammina": {
     "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48720.jpg",
     "shows": {
-     "223168": {
-      "fmt": "2D",
-      "when": "08/10 17:50"
-     },
-     "223169": {
-      "fmt": "2D",
-      "when": "08/10 21:20"
-     },
      "223171": {
       "fmt": "2D",
       "when": "09/10 20:30"
@@ -500,10 +472,6 @@
    "naza": {
     "poster": "https://www.arcadiacinema.com/cdn/movies/d3a32a04c4ab9961e173125abbc60a2196c1c327de16f4cf51880cde5d77f6aa38101aaf283f2e2476d065194a2b505f7a2020ee5e67de8d0aa3cf465f614720.jpg",
     "shows": {
-     "223116": {
-      "fmt": "2D",
-      "when": "08/10 17:30"
-     },
      "223118": {
       "fmt": "2D",
       "when": "09/10 17:30"
@@ -574,14 +542,6 @@
    "the-social-il-prezzo-della-verita": {
     "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48312.jpg",
     "shows": {
-     "223098": {
-      "fmt": "2D",
-      "when": "08/10 17:40"
-     },
-     "223099": {
-      "fmt": "2D",
-      "when": "08/10 20:40"
-     },
      "223100": {
       "fmt": "2D",
       "when": "09/10 17:40"
@@ -641,14 +601,6 @@
    "verity": {
     "poster": "https://www.arcadiacinema.com/cdn/movies/4e63a95d87a77a438cecd49369d3b751befd8de5bd10687f6cad29440981889dd4e57e97d0718bc3bdf3a612a0112b131b848bc2bc6ef5a819e87bda3c75e096.jpg",
     "shows": {
-     "223186": {
-      "fmt": "2D",
-      "when": "08/10 17:10"
-     },
-     "223187": {
-      "fmt": "2D",
-      "when": "08/10 21:10"
-     },
      "223188": {
       "fmt": "2D",
       "when": "09/10 17:10"
@@ -936,10 +888,6 @@
    "digger-2026": {
     "poster": "https://www.arcadiacinema.com/cdn/movies/eec4df2672c82ce0bbacb6c95f549be5a8c53aebc5a4c8c160fe732c6c69776f972f2a1af4593b9f30b4cd5bee0c9fd3e6bae69eaa2ff31aeb9c98a537871b1c.jpg",
     "shows": {
-     "131282": {
-      "fmt": "2D",
-      "when": "08/10 20:50"
-     },
      "131284": {
       "fmt": "2D",
       "when": "09/10 22:15"
@@ -1020,10 +968,6 @@
    "lalbero-di-molto-lontano": {
     "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48721.jpg",
     "shows": {
-     "131262": {
-      "fmt": "2D",
-      "when": "08/10 17:10"
-     },
      "131264": {
       "fmt": "2D",
       "when": "09/10 17:10"
@@ -1067,10 +1011,6 @@
       "fmt": "2D",
       "when": "11/10 15:00"
      },
-     "131300": {
-      "fmt": "2D",
-      "when": "08/10 17:25"
-     },
      "131302": {
       "fmt": "2D",
       "when": "09/10 17:25"
@@ -1090,10 +1030,6 @@
      "131312": {
       "fmt": "2D",
       "when": "14/10 20:30"
-     },
-     "131319": {
-      "fmt": "2D",
-      "when": "08/10 20:30"
      },
      "131321": {
       "fmt": "2D",
@@ -1126,10 +1062,6 @@
    "mammina": {
     "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48720.jpg",
     "shows": {
-     "131263": {
-      "fmt": "2D",
-      "when": "08/10 21:10"
-     },
      "131265": {
       "fmt": "2D",
       "when": "09/10 22:40"
@@ -1196,10 +1128,6 @@
    "naza": {
     "poster": "https://www.arcadiacinema.com/cdn/movies/d3a32a04c4ab9961e173125abbc60a2196c1c327de16f4cf51880cde5d77f6aa38101aaf283f2e2476d065194a2b505f7a2020ee5e67de8d0aa3cf465f614720.jpg",
     "shows": {
-     "131318": {
-      "fmt": "2D",
-      "when": "08/10 17:30"
-     },
      "131320": {
       "fmt": "2D",
       "when": "09/10 17:30"
@@ -1239,10 +1167,6 @@
    "odissea-2026": {
     "poster": "https://www.arcadiacinema.com/cdn/movies/7efd1bf999801fe57d7f176c695e11be0d008f8fa45df4e1a7e126c74b9743029fec9749e4ae4fc306860754205442cb7c5b6fbcd3d6eb29d50efadd01192d00.jpg",
     "shows": {
-     "131005": {
-      "fmt": "70MM ENERGIA",
-      "when": "08/10 17:00"
-     },
      "131006": {
       "fmt": "70MM ENERGIA",
       "when": "09/10 21:00"
@@ -1278,10 +1202,6 @@
      "131149": {
       "fmt": "FILM IN INGLESE 70MM ENERGIA",
       "when": "10/10 13:00"
-     },
-     "131166": {
-      "fmt": "70MM ENERGIA",
-      "when": "08/10 21:00"
      },
      "131167": {
       "fmt": "70MM ENERGIA",
@@ -1325,10 +1245,6 @@
    "the-social-il-prezzo-della-verita": {
     "poster": "https://img.cine-vu.it/locandineSchede/%5B446%5D48312.jpg",
     "shows": {
-     "131301": {
-      "fmt": "2D",
-      "when": "08/10 20:20"
-     },
      "131303": {
       "fmt": "2D",
       "when": "09/10 20:00"
@@ -1372,10 +1288,6 @@
    "verity": {
     "poster": "https://www.arcadiacinema.com/cdn/movies/4e63a95d87a77a438cecd49369d3b751befd8de5bd10687f6cad29440981889dd4e57e97d0718bc3bdf3a612a0112b131b848bc2bc6ef5a819e87bda3c75e096.jpg",
     "shows": {
-     "131281": {
-      "fmt": "2D",
-      "when": "08/10 17:20"
-     },
      "131283": {
       "fmt": "2D",
       "when": "09/10 19:50"
