@@ -1,10 +1,4 @@
 {
- "chats": {
-  "5118126735": [
-   "melzo",
-   "bellinzago"
-  ]
- },
  "cinemas": {
   "bellinzago": {
    "avengers-doomsday": {
@@ -1314,5 +1308,11 @@
    }
   }
  },
- "offset": 247209945
+ "commands_cleared": true,
+ "welcomed": {
+  "5118126735": [
+   "melzo",
+   "bellinzago"
+  ]
+ }
 }
