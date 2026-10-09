@@ -30,7 +30,7 @@ jobs:
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          CINEMAS: melzo   # cinema attivi di default, poi si cambiano con /track
+          CINEMAS: melzo,bellinzago   # cinema attivi di default, poi si cambiano con /track
           # WATCH: "odissea,matrix"   # opzionale: filtra i nuovi orari per titolo
         run: python bot.py
 
